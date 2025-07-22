@@ -1,4 +1,4 @@
-import { GRADIENT_BG } from "@/assets";
+import { GRADIENT_BG, IMAGES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
 import React from "react";
@@ -17,14 +17,14 @@ const AccountPreviewMode = () => {
             </h2>
             <div className="flex flex-col md:flex-row w-full gap-3 md:gap-8 ">
               <div className="bg-secondary-10 w-full rounded-2xl py-6 px-5">
-                <p className="font-Inter text-[22px] font-semibold text-center text-neutral-10">
+                <p className="font-Inter text-[22px] font-semibold text-center text-neutral-20">
                   Enter User ID Number
                 </p>
-                <div className="flex flex-col gap-5 mt-4">
+                <div className="flex flex-col gap-5 justify-center mt-4">
                   <input
                     type="text"
-                    placeholder="ex:R7YUHHI"
-                    className="rounded-full bg-secondary-20 w-full py-4 text-center border border-secondary-30 text-neutral-10"
+                    placeholder="Example:97463"
+                    className="rounded-full bg-neutral-10 w-full py-4 border text-center border-secondary-30 text-neutral-30"
                   />
                   <div
                     className="w-full p-[1px] text-white font-semibold text-xl rounded-full"
@@ -33,7 +33,7 @@ const AccountPreviewMode = () => {
                         "linear-gradient(90deg, #FF7800 0%, #FFE601 100%)",
                     }}
                   >
-                    <div className="bg-secondary-10 rounded-full relative">
+                    <div className="bg-secondary-10 flex justify-center rounded-full relative">
                       <div
                         className="absolute h-full w-full rounded-full"
                         style={{
@@ -49,7 +49,7 @@ const AccountPreviewMode = () => {
                             "linear-gradient(90deg, #FF7801 0%, #FFE601 100%)",
                         }}
                       >
-                        kmkmo
+                        Preview
                       </button>
                     </div>
                   </div>
@@ -71,32 +71,15 @@ const AccountPreviewMode = () => {
                   >
                     View a Random Account
                   </p>
-                  <div
-                    className="w-full p-[1px] text-white font-semibold text-xl rounded-full"
-                    style={{
-                      background:
-                        "linear-gradient(90deg, #FF7800 0%, #FFE601 100%)",
-                    }}
-                  >
-                    <div className="bg-secondary-10 rounded-full relative">
-                      <div
-                        className="absolute h-full w-full rounded-full"
-                        style={{
-                          background:
-                            "linear-gradient(90deg, rgba(254, 119, 1, 0.10) 0%, rgba(255, 230, 1, 0.10) 100%);",
-                        }}
-                      ></div>
-
-                      <button
-                        className="text-transparent bg-clip-text p-4 text-lg font-medium"
-                        style={{
-                          backgroundImage:
-                            "linear-gradient(90deg, #FF7801 0%, #FFE601 100%)",
-                        }}
-                      >
-                        kmkmo
-                      </button>
-                    </div>
+                  <div className="relative w-full px-[39px] py-[17px] mt-1 text-lg text-neutral-10 font-Jost rounded-full font-medium flex flex-col justify-center items-center gap-1 bg-gradient-button ">
+                    <Image
+                      src={IMAGES.buttonDesign}
+                      alt=""
+                      className="absolute top-0 right-0 h-full "
+                    />
+                    <button className="flex flex-row justify-center items-center gap-2">
+                      Check Demo
+                    </button>
                   </div>
                 </div>
               </div>
