@@ -1,8 +1,8 @@
 //icons
-
-
-// gradient bg
-// import gradientHero from "./gradient-bg/hero-gradient.png";
+import telegram from "../assets/icons/telegram.svg"
+import whatsapp from "../assets/icons/whats-app.svg"
+import youtube from "../assets/icons/youtube.svg"
+import facebook from "../assets/icons/facebook.svg"
 
 
 // images
@@ -29,7 +29,10 @@ export const IMAGES = {
 };
 
 export const ICONS = {
-  
+  telegram,
+  whatsapp,
+  facebook,
+  youtube,
 };
 // export const GRADIENT_BG = {
 //   gradientHero,
