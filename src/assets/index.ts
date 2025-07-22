@@ -2,7 +2,7 @@
 
 
 // gradient bg
-// import gradientHero from "./gradient-bg/hero-gradient.png";
+import accountPreview from "./gradient-bg/accout-preview.svg";
 
 
 // images
@@ -35,22 +35,10 @@ export const IMAGES = {
 export const ICONS = {
   
 };
-// export const GRADIENT_BG = {
-//   gradientHero,
-//   gradientServiceRight,
-//   gradientServiceLeft,
-//   gradientDarkProjects,
-//   gradientLightProjects,
-//   gradientInAction,
-// };
+export const GRADIENT_BG = {
+ accountPreview
+};
 
 // export const ANIMATEDICONS = {
-//   projectsGif,
-//   aboutUsGif,
-//   rocket,
-//   techStack,
-//   banner,
-//   servicesGif,
-//   progressGif,
-//   linkGif,
+// accountPreview
 // };
