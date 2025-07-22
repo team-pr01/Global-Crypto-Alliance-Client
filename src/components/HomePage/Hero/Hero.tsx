@@ -37,7 +37,7 @@ const Hero = () => {
                 SUSTAINABILITY-SCALABILITY TRANSPARENCY & SECURITY Limitless
                 Opportunities.
               </p>
-              <div className="flex flex-reverse-col md:flex-row gap-3 justify-center  w-full mt-3">
+              <div className="flex flex-col-reverse lg:flex-row gap-3 items-center md:items-baseline w-full mt-3">
                 <div className="relative w-[300px] px-[39px] py-[17px] text-lg text-neutral-10 font-Jost rounded-full font-medium flex flex-col justify-center items-center gap-1 bg-gradient-button ">
                   <Image
                     src={IMAGES.buttonDesign}
