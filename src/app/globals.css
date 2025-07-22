@@ -13,14 +13,8 @@
 
   /* Primary */
 
-  /* --color-primary-10: #61dafb;
-  --color-primary-15: #6ecaf8;
-  --color-primary-20: #06a0ed;
-  --color-primary-30: #0696e7;
-  --color-primary-40: #06a0ed33;
-  --color-primary-50: #91a0b5;
-  --color-primary-60: #101742;
-  --color-primary-70: #2c5970; */
+  --color-primary-10: #FF7800;
+  --color-primary-15: #FE7801;
 
   /* secondary */
   --color-secondary-10: #0D0D0D;
@@ -40,7 +34,12 @@
     #020817 0%,
     rgba(2, 8, 23, 0) 100%
   );
+  --bg-gradient-future-roadmap: linear-gradient(278deg, rgba(0, 0, 0, 0.17) 0%, rgba(0, 0, 0, 0.06) 100%);
   
+}
+
+.bg-gradient-future-roadmap {
+  background: var(--bg-gradient-future-roadmap);
 }
 
 .bg-gradient-primary {
