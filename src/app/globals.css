@@ -48,11 +48,7 @@
 
   /* Gradients */
   --bg-gradient-primary: linear-gradient(90deg, rgba(255, 120, 0, 0.10) 19.52%, rgba(255, 230, 1, 0.10) 137.52%);
-  --bg-project-bg-gradient: linear-gradient(
-    180deg,
-    #020817 0%,
-    rgba(2, 8, 23, 0) 100%
-  );
+  --bg-project-bg-gradient: linear-gradient(180deg, #0D0D0D 0%, #1A1A1A 67.26%);
   
 }
 

@@ -14,6 +14,7 @@ import logo from "../assets/images/logo.png"
 import companyNameLogo from "../assets/images/company-name-logo.png"
 import heroImage from "../assets/images/hero-image.png"
 import heroImage2 from "../assets/images/hero-image-2.png"
+import coinImage from "../assets/images/coin-image.png"
 
 
 
@@ -28,7 +29,7 @@ export const IMAGES = {
  heroBg,
  heroBgSmall,
  heroImage2,
- 
+ coinImage,
 };
 
 export const ICONS = {
