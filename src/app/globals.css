@@ -13,14 +13,14 @@
 
   /* Primary */
 
-  /* --color-primary-10: #61dafb;
+  --color-primary-10: #61dafb;
   --color-primary-15: #6ecaf8;
   --color-primary-20: #06a0ed;
   --color-primary-30: #0696e7;
   --color-primary-40: #06a0ed33;
   --color-primary-50: #91a0b5;
   --color-primary-60: #101742;
-  --color-primary-70: #2c5970; */
+  --color-primary-70: #2c5970;
 
   /* secondary */
   --color-secondary-10: #0D0D0D;
@@ -49,6 +49,7 @@
   /* Gradients */
   --bg-gradient-primary: linear-gradient(90deg, rgba(255, 120, 0, 0.10) 19.52%, rgba(255, 230, 1, 0.10) 137.52%);
   --bg-project-bg-gradient: linear-gradient(180deg, #0D0D0D 0%, #1A1A1A 67.26%);
+  --bg-text-bg-gradient:linear-gradient(90deg, #FF7800 46.93%, #FFE601 100%);
   
 }
 
@@ -56,32 +57,13 @@
   background: var(--bg-gradient-primary);
 }
 
-.bg-gradient-dark {
-  background: var(--bg-gradient-dark);
+.bg-text-bg-gradient {
+  background: var(--bg-text-bg-gradient);
 }
 .bg-project-bg-gradient {
   background: var(--bg-project-bg-gradient);
 }
-.bg-service-gradient {
-  background: var(--bg-service-gradient);
-}
-.bg-faq-bg-gradient {
-  background: var(--bg-faq-bg-gradient);
-}
-.bg-faq-gradient {
-  background: var(--bg-faq-gradient);
-}
-.bg-about-bg-gradient {
-  background: var(--bg-about-bg-gradient);
-}
-.bg-about-bg-gradient2 {
-  background: var(--bg-about-bg-gradient2);
-}
-.bg-our-projects-bg-gradient {
-  background: var(--bg-our-projects-bg-gradient);
-}
-
-/* Custom scrollbar for a specific section */
+/* custom scrollbar for a specific section */ 
 .custom-scrollbar {
   overflow-y: auto;
   max-height: 400px;
