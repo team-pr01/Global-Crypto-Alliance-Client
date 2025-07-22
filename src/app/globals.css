@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
 @import "tailwindcss";
 
 @theme {
   /* Fonts */
   --font-Jost: "Jost" , sans-serif;
+  --font-Inter: "Inter" , sans-serif;
   --font-Rethink: "Rethink Sans", sans-serif;
 
   /* Colors */
@@ -45,7 +47,7 @@
    --shadow-custom-button: 0px -2px 2px 0px rgba(255, 255, 255, 0.05) inset, 0px 12px 45px 0px rgba(137, 81, 246, 0.35); */
 
   /* Gradients */
-  --bg-gradient-primary: linear-gradient(180deg, #06a0ed 100%, #6ecaf8 100%);
+  --bg-gradient-primary: linear-gradient(90deg, rgba(255, 120, 0, 0.10) 19.52%, rgba(255, 230, 1, 0.10) 137.52%);
   --bg-project-bg-gradient: linear-gradient(
     180deg,
     #020817 0%,
