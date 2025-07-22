@@ -13,7 +13,10 @@
 
   /* Primary */
 
-  --color-primary-10: #FFE601;
+
+  --color-primary-10: #FF7800;
+  --color-primary-15: #FE7801;
+
 
   /* secondary */
   --color-secondary-10: #0D0D0D;
@@ -22,21 +25,32 @@
 
   /* neutral */
 
-  --color-neutral-10: #898989;
+
+   --color-neutral-10: #1A1A1A;
+
 
 
   /* Shadows */
-  /* --shadow-custom: 0px 4px 58px rgba(0, 0, 0,);
-   --shadow-custom-joinus: 0px 0px 56px 24px rgba(255, 255, 255, 0.10);
-   --shadow-custom-hero: 0px 4px 250px 16px #A276FA;
-   --shadow-custom-button: 0px -2px 2px 0px rgba(255, 255, 255, 0.05) inset, 0px 12px 45px 0px rgba(137, 81, 246, 0.35); */
+   --shadow-footer: 0px -2px 14px 0px rgba(0, 0, 0, 0.20);
 
   /* Gradients */
   --bg-gradient-primary: linear-gradient(90deg, rgba(255, 120, 0, 0.10) 19.52%, rgba(255, 230, 1, 0.10) 137.52%);
-  --bg-project-bg-gradient: linear-gradient(180deg, #0D0D0D 0%, #1A1A1A 67.26%);
+
+  --bg-project-bg-gradient: linear-gradient(
+    180deg,
+    #020817 0%,
+    rgba(2, 8, 23, 0) 100%
+  );
+  --bg-gradient-future-roadmap: linear-gradient(278deg, rgba(0, 0, 0, 0.17) 0%, rgba(0, 0, 0, 0.06) 100%);
+ --bg-project-bg-gradient: linear-gradient(180deg, #0D0D0D 0%, #1A1A1A 67.26%);
   --bg-text-bg-gradient:linear-gradient(90deg, #FF7800 46.93%, #FFE601 100%);
   --bg-border-bg-gradient:linear-gradient(90deg, #FF7800 100%, #FFE601 100%);
+
   
+}
+
+.bg-gradient-future-roadmap {
+  background: var(--bg-gradient-future-roadmap);
 }
 
 .bg-gradient-primary {

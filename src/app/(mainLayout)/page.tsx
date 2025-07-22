@@ -1,5 +1,9 @@
+
+import FutureRoadMap from "@/components/FutureRoadMap/FutureRoadMap";
+
 import AboutUs from "@/components/HomePage/AboutUs/AboutUs";
 import AccountPreviewMode from "@/components/HomePage/AccountPreviewMode/AccountPreviewMode";
+
 import Hero from "@/components/HomePage/Hero/Hero";
 
 export default function Home() {
@@ -8,6 +12,8 @@ export default function Home() {
       <Hero />
       <AboutUs/>
       <AccountPreviewMode/>
+       <FutureRoadMap/>
+
     </div>
   );
 }
