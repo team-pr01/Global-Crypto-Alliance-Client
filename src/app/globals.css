@@ -4,7 +4,7 @@
 
 @theme {
   /* Fonts */
-  --font-Inter: Inter, sans-serif;
+  --font-Jost: "Jost" , sans-serif;
   --font-Rethink: "Rethink Sans", sans-serif;
 
   /* Colors */
@@ -51,36 +51,7 @@
     #020817 0%,
     rgba(2, 8, 23, 0) 100%
   );
-  --bg-about-bg-gradient: linear-gradient(
-    180deg,
-    #06a0ed 0%,
-    rgba(3, 91, 135, 0) 100%
-  );
-  --bg-about-bg-gradient2: linear-gradient(
-    180deg,
-    #06a0ed 0%,
-    rgba(3, 91, 135, 0) 100%
-  );
-  --bg-our-projects-bg-gradient: linear-gradient(
-    180deg,
-    #1a1e27 0%,
-    #0a1222 100%
-  );
-
-  --bg-service-gradient: linear-gradient(180deg, #284888 0%, #0a1222 100%);
-  --bg-faq-gradient: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.05) 0%,
-    rgba(114, 114, 114, 0.05) 100%
-  );
-  --bg-faq-bg-gradient: linear-gradient(
-    to right,
-    rgba(6, 160, 237, 1) 0%,
-    rgba(6, 160, 237, 0.2) 60%,
-    rgba(11, 19, 36, 0) 100%
-  );
-
-  /* --bg-gradient-dark: linear-gradient(180deg, rgba(124, 67, 215, 0.00) 0%, rgba(124, 67, 215, 0.05) 23.44%, rgba(124, 67, 215, 0.05) 100%); */
+  
 }
 
 .bg-gradient-primary {
