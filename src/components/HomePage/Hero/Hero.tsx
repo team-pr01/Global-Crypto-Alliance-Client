@@ -5,9 +5,10 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <Container>
-      <div className="relative w-full h-full ">
+      <div className="relative w-full h-full mt-10 ">
         {/* Blurred background layer */}
         <Image
+        
           src={IMAGES.heroBg}
           alt="Blurred Background"
           fill
