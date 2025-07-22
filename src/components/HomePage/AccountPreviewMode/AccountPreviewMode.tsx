@@ -26,7 +26,7 @@ const AccountPreviewMode = () => {
                     placeholder="ex:R7YUHHI"
                     className="rounded-full bg-secondary-20 w-full py-4 text-center border border-secondary-30 text-neutral-10"
                   />
-                  <button
+                  <div
                     className="w-full p-[1px] text-white font-semibold text-xl rounded-full"
                     style={{
                       background:
@@ -42,7 +42,7 @@ const AccountPreviewMode = () => {
                         }}
                       ></div>
 
-                      <p
+                      <button
                         className="text-transparent bg-clip-text p-4 text-lg font-medium"
                         style={{
                           backgroundImage:
@@ -50,9 +50,9 @@ const AccountPreviewMode = () => {
                         }}
                       >
                         kmkmo
-                      </p>
+                      </button>
                     </div>
-                  </button>
+                  </div>
                 </div>
               </div>
               <div className=" relative flex flex-col items-center w-full bg-secondary-20 border border-primary-10 rounded-2xl ">
@@ -71,7 +71,7 @@ const AccountPreviewMode = () => {
                   >
                     View a Random Account
                   </p>
-                  <button
+                  <div
                     className="w-full p-[1px] text-white font-semibold text-xl rounded-full"
                     style={{
                       background:
@@ -87,7 +87,7 @@ const AccountPreviewMode = () => {
                         }}
                       ></div>
 
-                      <p
+                      <button
                         className="text-transparent bg-clip-text p-4 text-lg font-medium"
                         style={{
                           backgroundImage:
@@ -95,9 +95,9 @@ const AccountPreviewMode = () => {
                         }}
                       >
                         kmkmo
-                      </p>
+                      </button>
                     </div>
-                  </button>
+                  </div>
                 </div>
               </div>
             </div>
