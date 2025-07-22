@@ -9,6 +9,7 @@
 // import comingSoonPage from "../assets/images/02 - Distance Nebulae.png";
 import layoutBg from "../assets/images/layout-bg.png"
 import heroBg from "../assets/images/hero-bg.png"
+import heroBgSmall from "../assets/images/hero-bg-small.png"
 import logo from "../assets/images/logo.png"
 import companyNameLogo from "../assets/images/company-name-logo.png"
 import heroImage from "../assets/images/hero-image.png"
@@ -23,7 +24,8 @@ export const IMAGES = {
  logo,
  companyNameLogo,
  heroImage,
- heroBg
+ heroBg,
+ heroBgSmall,
 };
 
 export const ICONS = {
