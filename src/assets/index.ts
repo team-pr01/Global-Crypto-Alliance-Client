@@ -7,6 +7,7 @@ import facebook from "../assets/icons/facebook.svg";
 import gMeet from "../assets/icons/g-meet.svg";
 import wallet from "../assets/icons/wallet.svg";
 import telegramIcon from "../assets/icons/telegram-icon.svg";
+import medel from "../assets/icons/medel.svg";
 
 // gradient bg
 import accountPreview from "./gradient-bg/accout-preview.svg";
@@ -35,6 +36,9 @@ import primeStarter2 from "../assets/images/prime-starter2.png";
 import eliteLevel from "../assets/images/elite-level.png";
 import royaltyBrown from "../assets/images/royalty-brown.png";
 import rocket from "../assets/images/rocket.png";
+import aboutUsCoin from "../assets/images/about-us-coin.png";
+import tutorialcardBg from "../assets/images/tutorial-card-bg.png";
+import user from "../assets/images/user.svg";
 
 export const IMAGES = {
   layoutBg,
@@ -58,7 +62,10 @@ export const IMAGES = {
   primeStarter2,
   eliteLevel,
   royaltyBrown,
-  rocket
+  rocket,
+  aboutUsCoin,
+  tutorialcardBg,
+  user
 };
 
 export const ICONS = {
@@ -69,6 +76,7 @@ export const ICONS = {
   gMeet,
   wallet,
   telegramIcon,
+  medel
 };
 export const GRADIENT_BG = {
   accountPreview,

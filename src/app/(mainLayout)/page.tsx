@@ -7,6 +7,7 @@ import AccountPreviewMode from "@/components/HomePage/AccountPreviewMode/Account
 import Hero from "@/components/HomePage/Hero/Hero";
 import LifetimeIncome from "@/components/HomePage/LifetimeIncome/LifetimeIncome";
 import PlatformOffers from "@/components/HomePage/PlatformOffers/PlatformOffers";
+import MonthlyTopEarners from "@/components/HomePage/MonthlyTopEarners/MonthlyTopEarners";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AccountPreviewMode/>
       <LifetimeIncome/>
       <PlatformOffers/>
+      <MonthlyTopEarners/>
        <FutureRoadMap/>
 
     </div>
