@@ -1,5 +1,8 @@
+import { ICONS, IMAGES } from "@/assets";
 import Container from "../Reusable/Container/Container";
 import RoadMapCard from "./RoadMapCard";
+import Image from "next/image";
+import JoinUs from "./JoinUs";
 
 const FutureRoadMap = () => {
   const cardRow1Details = [
@@ -121,11 +124,12 @@ const FutureRoadMap = () => {
   ];
   return (
     <div className="relative">
-      <div className="absolute -top-24 xl:-top-60 -left-10 xl:-left-40 size-[171px] xl:size-[542px] rounded-full bg-gradient-to-r from-[#FF7800] to-[#FFE601] p-7 xl:p-16 flex items-center justify-center">
+      <div className="absolute top-[1300px] xl:top-[500px] -left-10 xl:-left-40 size-[171px] xl:size-[542px] rounded-full bg-gradient-to-r from-[#FF7800] to-[#FFE601] p-7 xl:p-16 flex items-center justify-center">
         <div className="relative w-full h-full rounded-full bg-neutral-10"></div>
       </div>
       <Container>
-        <div className=" backdrop-blur-[24px] h-[1000px] xl:h-[1500px] bg-gradient-future-roadmap border border-primary-15 rounded-2xl">
+        <JoinUs />
+        <div className=" backdrop-blur-[24px] h-[1000px] xl:h-[1500px] bg-gradient-future-roadmap border border-primary-15 rounded-2xl mt-7 xl:mt-24">
           <div className="relative z-10 flex flex-col-reverse md:flex-row justify-between backdrop-blur-md rounded-2xl items-center w-full">
             <div className="flex flex-col w-full">
               <h1
@@ -209,25 +213,25 @@ const FutureRoadMap = () => {
                 </div>
 
                 {/* For desktop */}
-                <div className="hidden xl:grid grid-cols-3 gap-[30px] absolute -top-11 left-20">
+                <div className="hidden xl:grid grid-cols-3 gap-[30px] absolute -top-11 left-20 2xl:left-[175px]">
                   {cardRow1Details?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
 
-                <div className="hidden xl:grid grid-cols-3 gap-[30px] absolute top-[266px] right-20">
+                <div className="hidden xl:grid grid-cols-3 gap-[30px] absolute top-[266px] right-20 2xl:right-[175px]">
                   {cardRow2Details?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
 
-                <div className="hidden xl:grid grid-cols-3 gap-[30px] absolute bottom-[87px] left-20">
+                <div className="hidden xl:grid grid-cols-3 gap-[30px] absolute bottom-[87px] left-20 2xl:left-[175px]">
                   {cardRow3Details?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
 
-                <div className="hidden xl:grid grid-cols-3 gap-[30px] absolute -bottom-[224px] right-20">
+                <div className="hidden xl:grid grid-cols-3 gap-[30px] absolute -bottom-[224px] right-20 2xl:right-[175px]">
                   {cardRow4Details?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
