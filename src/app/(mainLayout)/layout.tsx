@@ -10,7 +10,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
       <Image
         src={IMAGES.layoutBg}
         alt="Background"
-        className="absolute top-0 left-0 w-[356px] object-cover z-0"
+        className="absolute -top-18 -left-20 md:top-0 md:left-0 w-[286px] md:w-[356px] object-cover z-0"
       />
 
       {/* Content above the background */}
