@@ -30,17 +30,25 @@ const UserStats = () => {
           key={index}
           className="bg-neutral-10 rounded-t-2xl rounded-b-3xl border-b-2 xl:border-b-8 border-primary-10 p-6 flex flex-col font-Inter h-[209px] md:h-[260px] relative"
         >
-          <Image src={IMAGES.linnerBg} alt="" className="absolute right-0" />
           <Image
-            src={IMAGES.linnerBg}
+            src={IMAGES.linnerBgRight}
             alt=""
-            className="absolute left-0 rotate-180 h-full"
+            className="absolute top-0 right-0 h-full rounded-r-2xl"
           />
-          <Image src={item.image} alt="" className="size-[76px] md:size-[116px] mx-auto" />
-          <p className="text-white text-sm md:text-lg text-center mt-3 md:mt-[18px]">
+          <Image
+            src={IMAGES.linnerBgLeft}
+            alt=""
+            className="absolute top-0 left-0 rotate-180 h-full rounded-l-2xl"
+          />
+          <Image
+            src={item.image}
+            alt=""
+            className="size-[100px] md:size-[116px] mx-auto"
+          />
+          <p className="text-white text-sm md:text-lg text-center">
             {item.title}
           </p>
-          <h1 className="text-white text-2xl md:text-[32px] font-medium text-center mt-3 md:mt-2">
+          <h1 className="text-white text-2xl md:text-[32px] font-medium text-center mt-1 md:mt-2">
             {item.description}
           </h1>
         </div>

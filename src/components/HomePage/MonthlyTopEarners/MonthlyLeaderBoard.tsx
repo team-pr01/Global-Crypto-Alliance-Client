@@ -5,10 +5,9 @@ import LeaderboardTable from "../Tables/LeadrerBoardTble";
 const leaderboardData = [
   { position: 1, name: "Marco Jens", id: "481029", avatar: IMAGES.user, profit: "$942" },
   { position: 2, name: "Jane Doe", id: "481045", avatar: IMAGES.user, profit: "$890" },
-  { position: 1, name: "Marco Jens", id: "481029", avatar: IMAGES.user, profit: "$942" },
-  { position: 2, name: "Jane Doe", id: "481045", avatar: IMAGES.user, profit: "$890" },
-  { position: 1, name: "Marco Jens", id: "481029", avatar: IMAGES.user, profit: "$942" },
-  { position: 2, name: "Jane Doe", id: "481045", avatar: IMAGES.user, profit: "$890" },
+  { position: 3, name: "Marco Jens", id: "481029", avatar: IMAGES.user, profit: "$942" },
+  { position: 4, name: "Jane Doe", id: "481045", avatar: IMAGES.user, profit: "$890" },
+  { position: 5, name: "Marco Jens", id: "481029", avatar: IMAGES.user, profit: "$942" },
 ];
 
 export default function MonthlyLeaderBoard() {

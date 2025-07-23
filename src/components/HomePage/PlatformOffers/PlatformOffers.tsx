@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import { IMAGES } from "@/assets";
+import { ICONS, IMAGES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -61,7 +61,7 @@ const PlatformOffers = () => {
         </div>
 
         {/* Mobile View */}
-        <div className="md:hidden w-full mt-8 px-4">
+        <div className="md:hidden w-full mt-8">
           {/* Top Numbered Pagination */}
           <div className="flex justify-between gap-4 mb-4 bg-neutral-45 p-4 rounded-[30px]">
             {platformOffers.map((_, idx) => (
@@ -97,14 +97,14 @@ const PlatformOffers = () => {
                 <SwiperSlide key={`mobile-${index}`}>
                   <div className="bg-neutral-10 rounded-t-2xl rounded-b-3xl border-b-4 border-primary-10 p-6 h-[206px] lg:h-[250px] flex flex-col gap-4 mx-auto max-w-full xl:max-w-[280px] relative">
                     <Image
-                      src={IMAGES.linnerBg}
+                      src={IMAGES.linnerBgRight}
                       alt=""
-                      className="absolute right-0"
+                      className="absolute top-0 right-0 h-full rounded-r-2xl"
                     />
                     <Image
-                      src={IMAGES.linnerBg}
+                      src={IMAGES.linnerBgLeft}
                       alt=""
-                      className="absolute left-0 rotate-180 h-full"
+                      className="absolute top-0 left-0 rotate-180 h-full rounded-l-2xl"
                     />
                     <Image
                       src={item.image}
@@ -124,7 +124,7 @@ const PlatformOffers = () => {
               onClick={() => swiperRef.current?.slidePrev()}
               className="absolute left-2 top-1/2 transform -translate-y-1/2 border border-primary-10 bg-neutral-10 size-[34px] rounded-full flex items-center justify-center z-10 text-primary-10"
             >
-              &larr;
+              <Image src={ICONS.arrowRight} alt="" className="rotate-180" />
             </button>
 
             {/* Right Arrow */}
@@ -132,7 +132,7 @@ const PlatformOffers = () => {
               onClick={() => swiperRef.current?.slideNext()}
               className="absolute right-2 top-1/2 transform -translate-y-1/2 border border-primary-10 bg-neutral-10 size-[34px] rounded-full flex items-center justify-center z-10 text-primary-10"
             >
-              &rarr;
+               <Image src={ICONS.arrowRight} alt="" className="rotate-360" />
             </button>
           </div>
         </div>

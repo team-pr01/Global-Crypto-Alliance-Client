@@ -22,7 +22,7 @@ const Navbar = () => {
     <div
       className={clsx(
         "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-        scrolled && "backdrop-blur-[24px] bg-gradient-future-roadmap py-2"
+        scrolled && "backdrop-blur-[24px] bg-gradient-future-roadmap"
       )}
     >
       <Container>

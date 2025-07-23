@@ -1,4 +1,4 @@
-import { ICONS, IMAGES } from "@/assets";
+import { IMAGES } from "@/assets";
 import Container from "../Reusable/Container/Container";
 import RoadMapCard from "./RoadMapCard";
 import Image from "next/image";
@@ -124,7 +124,7 @@ const FutureRoadMap = () => {
   ];
   return (
     <div className="relative mt-7 xl:mt-[100px]">
-      <div className="absolute top-[800px] xl:top-[500px] -left-10 xl:-left-40 size-[171px] xl:size-[542px] rounded-full bg-gradient-to-r from-[#FF7800] to-[#FFE601] p-7 xl:p-16 flex items-center justify-center">
+      <div className="absolute top-[700px] xl:top-[500px] -left-10 xl:-left-40 size-[171px] xl:size-[542px] rounded-full bg-gradient-to-r from-[#FF7800] to-[#FFE601] p-7 xl:p-16 flex items-center justify-center">
         <div className="relative w-full h-full rounded-full bg-neutral-10"></div>
       </div>
       <Container>
@@ -162,51 +162,37 @@ const FutureRoadMap = () => {
                   </svg>
                 </div>
 
-                <div className="block xl:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    // width="321"
-                    height="731"
-                    viewBox="0 0 321 731"
-                    fill="none"
-                    className="w-full"
-                  >
-                    <path
-                      d="M1 1.00049H320V146.705H1V292.886H320V438.591H1V584.296H320V730H1"
-                      stroke="#FF7800"
-                      stroke-linecap="round"
-                      stroke-dasharray="5 5"
-                    />
-                  </svg>
+                <div className="block xl:hidden ml-1">
+                  <Image src={IMAGES.lineBg} alt="" className="" />
                 </div>
 
                 {/* For mobile */}
-                <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-[17px] left-5">
+                <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-5 left-5">
                   {cardRow1DetailsMobile?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
-                <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-[162px] left-5">
+                <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-[167px] left-5">
                   {cardRow2DetailsMobile?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
-                <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-[308px] left-5">
+                <div className="grid grid-cols-2 gap-5 xl:hidden absolute top-[313px] left-5">
                   {cardRow3DetailsMobile?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
-                <div className="grid grid-cols-2 gap-5 xl:hidden absolute bottom-[196px] left-5">
+                <div className="grid grid-cols-2 gap-5 xl:hidden absolute bottom-[200px] left-5">
                   {cardRow4DetailsMobile?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
-                <div className="grid grid-cols-2 gap-5 xl:hidden absolute bottom-[50px] left-5">
+                <div className="grid grid-cols-2 gap-5 xl:hidden absolute bottom-[54px] left-5">
                   {cardRow5DetailsMobile?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}
                 </div>
-                <div className="grid grid-cols-2 gap-5 xl:hidden absolute -bottom-[95px] left-5">
+                <div className="grid grid-cols-2 gap-5 xl:hidden absolute -bottom-[92px] left-5">
                   {cardRow6DetailsMobile?.map((item) => (
                     <RoadMapCard key={item?.sl} item={item} />
                   ))}

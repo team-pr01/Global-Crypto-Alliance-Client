@@ -8,6 +8,7 @@ import gMeet from "../assets/icons/g-meet.svg";
 import wallet from "../assets/icons/wallet.svg";
 import telegramIcon from "../assets/icons/telegram-icon.svg";
 import medel from "../assets/icons/medel.svg";
+import arrowRight from "../assets/icons/arrow-right.svg";
 
 // gradient bg
 import accountPreview from "./gradient-bg/accout-preview.svg";
@@ -36,15 +37,18 @@ import limitlessGeneration from "../assets/images/limitless-generation.png";
 import primeStarter2 from "../assets/images/prime-starter2.png";
 import eliteLevel from "../assets/images/elite-level.png";
 import royaltyBrown from "../assets/images/royalty-brown.png";
-import rocket from "../assets/images/rocket.png";
+import rocket from "../assets/images/rocket.svg";
 import aboutUsCoin from "../assets/images/about-us-coin.png";
 import tutorialcardBg from "../assets/images/tutorial-card-bg.png";
 import user from "../assets/images/user.svg";
 import needHelp from "../assets/images/need-help.png";
-import membersTransfered from "../assets/images/mebers-transfered.png";
-import membersReceived from "../assets/images/members-received.png";
-import members from "../assets/images/members.png";
+import membersTransfered from "../assets/images/mebers-transfered.svg";
+import membersReceived from "../assets/images/members-received.svg";
+import members from "../assets/images/members.svg";
 import heroGradient2 from "../assets/images/hero-gradient-2.svg";
+import linnerBgRight from "../assets/images/linner-bg-right.svg";
+import linnerBgLeft from "../assets/images/linner-bg-left.svg";
+import lineBg from "../assets/images/line-bg.svg";
 
 export const IMAGES = {
   layoutBg,
@@ -78,6 +82,9 @@ export const IMAGES = {
   membersReceived,
   members,
   heroGradient2,
+  linnerBgRight,
+  linnerBgLeft,
+  lineBg,
 };
 
 export const ICONS = {
@@ -88,7 +95,8 @@ export const ICONS = {
   gMeet,
   wallet,
   telegramIcon,
-  medel
+  medel,
+  arrowRight,
 };
 export const GRADIENT_BG = {
   accountPreview,

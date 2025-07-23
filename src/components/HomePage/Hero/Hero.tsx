@@ -14,16 +14,16 @@ const Hero = () => {
           fill
           className="object-fit hidden md:block h-full absolute inset-0 z-0"
         />
-        <Image
+        {/* <Image
           src={IMAGES.heroBgSmall}
           alt="Blurred Background"
           fill
           className=" md:hidden h-full absolute inset-0 z-0"
-        />
+        /> */}
 
         {/* Content above the blurred background */}
-        <div className="bg-gradient-future-roadmap p-[1px] backdrop-blur-[24px] rounded-2xl">
-            <div className="flex w-full md:w-[60%] bg-neutral-10 flex-col md:py-10 md:pl-21 justify-center items-center md:items-start px-2 rounded-2xl relative">
+        {/* <div className="bg-gradient-future-roadmap p-[1px] backdrop-blur-[24px] rounded-2xl"> */}
+            <div className="flex w-full md:w-[60%] bg-gradient-future-roadmap backdrop-blur-[24px] border border-primary-10/60 flex-col pb-5 xl:pb-0 md:py-10 md:pl-21 justify-center items-center md:items-start px-2 rounded-2xl relative">
               
               <div className="size-[114px] rounded-full bg-gradient-hero-circle blur-[22px] absolute top-20 z-0"></div>
               <Image
@@ -32,7 +32,7 @@ const Hero = () => {
                 className="w-[211px] h-[143px] z-10 mt-[30px]"
               />
 
-              <p className="text-xl text-white leading-[26px] font-semibold font-Jost mt-6">
+              <p className="text-xl text-white leading-[26px] font-semibold font-Jost mt-9">
                 Welcome To
               </p>
               <Image
@@ -89,7 +89,7 @@ const Hero = () => {
                 <Image src={IMAGES.heroGradient2} alt="" className="absolute right-0 bottom-0 rounded-br-2xl z-0" />
               </div>
             </div>
-        </div>
+        {/* </div> */}
       </div>
     </Container>
   );

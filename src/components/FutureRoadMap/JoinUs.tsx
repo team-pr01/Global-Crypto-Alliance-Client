@@ -100,24 +100,28 @@ const JoinUs = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-neutral-10 rounded-2xl relative p-9 w-full lg:w-[50%] mt-0 xl:mt-[285px] flex flex-col justify-end">
-          <Image src={IMAGES.linnerBg} alt="" className="absolute right-0" />
-          <Image
-            src={IMAGES.linnerBg}
-            alt=""
-            className="absolute left-0 rotate-180"
-          />
+        <div className="bg-neutral-10 rounded-2xl relative p-5 xl:p-9 w-full lg:w-[50%] mt-0 xl:mt-[285px] flex flex-col justify-end h-[210px] xl:h-fit">
+           <Image
+                      src={IMAGES.linnerBgRight}
+                      alt=""
+                      className="absolute top-0 right-0 h-full rounded-r-2xl"
+                    />
+                    <Image
+                      src={IMAGES.linnerBgLeft}
+                      alt=""
+                      className="absolute top-0 left-0 rotate-180 h-full rounded-l-2xl"
+                    />
 
           <div className="flex flex-col items-center justify-center">
-            <Image src={ICONS.telegramIcon} alt="" className="" />
+            <Image src={ICONS.telegramIcon} alt="" className="size-[85px]" />
 
-            <h1 className="text-white text-2xl font-semibold font-Inter text-center mt-2">
+            <h1 className="text-white text-2xl font-semibold font-Inter text-center">
               Join Our Telegram
             </h1>
 
             {/* Button */}
             <div
-              className="w-full p-[1px] text-white font-semibold text-xl rounded-full cursor-pointer mt-6"
+              className="w-full p-[1px] text-white font-semibold text-xl rounded-full cursor-pointer mt-3"
               style={{
                 background: "linear-gradient(90deg, #FF7800 0%, #FFE601 100%)",
               }}
@@ -132,7 +136,7 @@ const JoinUs = () => {
                 ></div>
 
                 <button
-                  className="text-transparent flex flex-row items-center justify-center bg-clip-text px-[39px] py-[14px] xl:py-[17px] text-lg font-medium gap-2"
+                  className="text-transparent flex flex-row items-center justify-center bg-clip-text px-[39px] py-[8px] xl:py-[17px] text-lg font-medium gap-2"
                   style={{
                     backgroundImage:
                       "linear-gradient(90deg, #FF7801 0%, #FFE601 100%)",

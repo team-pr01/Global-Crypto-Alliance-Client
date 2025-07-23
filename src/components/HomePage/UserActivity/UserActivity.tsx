@@ -12,47 +12,58 @@ const UserActivity = () => {
       program: "Starter",
       id: "481029",
       avatar: IMAGES.user,
-      profit: "+10 USDT",
+      profit: "+00 BNB",
+      isNew: true,
     },
     {
       position: 2,
       time: "26 Min",
-      program: "Starter",
+      program: "Royalty",
       id: "481045",
       avatar: IMAGES.user,
-      profit: "+10 USDT",
+      profit: "+10 BNB",
+      isViewProfileDisabled: true,
     },
     {
       position: 1,
       time: "26 Min",
-      program: "Starter",
+      program: "Partner",
       id: "481029",
       avatar: IMAGES.user,
-      profit: "+10 USDT",
+      profit: "+10 BNB",
     },
     {
       position: 2,
       time: "26 Min",
-      program: "Starter",
+      program: "Genaration",
       id: "481045",
       avatar: IMAGES.user,
-      profit: "+10 USDT",
+      profit: "+10 BNB",
     },
     {
       position: 1,
       time: "26 Min",
-      program: "Starter",
+      program: "Level",
       id: "481029",
       avatar: IMAGES.user,
-      profit: "+10 USDT",
+      profit: "+10 BNB",
     },
     {
       position: 2,
       time: "26 Min",
-      program: "Starter",
+      program: "Global",
       id: "481045",
       avatar: IMAGES.user,
-      profit: "+10 USDT",
+      profit: "+10 BNB",
+    },
+    {
+      position: 2,
+      time: "26 Min",
+      program: "Bonus",
+      id: "481045",
+      avatar: IMAGES.user,
+      profit: "+10 BNB",
+      isUserIdDisabled: true,
     },
   ];
   return (
@@ -72,7 +83,7 @@ const UserActivity = () => {
 
           <div className="w-full max-w-[1000px] mx-auto mt-10">
             {/* Table Header */}
-            <div className="flex justify-between text-xs md:text-lg text-neutral-40 mb-7">
+            <div className="flex justify-between text-xs md:text-lg text-neutral-40 mb-7 font-medium">
               <span className="w-fit">User ID</span>
               <span className="w-fit mr-5">Profit</span>
               <span className="w-fit text-center">Time</span>
@@ -88,7 +99,12 @@ const UserActivity = () => {
                   className="flex justify-between items-center gap-4 text-white text-[10px] xl:text-lg font-semibold text-center"
                 >
                   {/* Position */}
-                  <div className="w-fit p-[10px] bg-primary-10 rounded-md">
+                  <div className={`w-[60px] xl:w-fit p-2  rounded-md relative ${user?.isUserIdDisabled ? "bg-neutral-55 text-neutral-10" : "bg-primary-10 text-white"}`}>
+                    {user?.isNew && (
+                      <div className="bg-[#2AB500] rounded-[25px] px-1 py-[2px] text-white text-[10px] text-center absolute -top-3 left-0 right-0 w-fit mx-auto">
+                        New
+                      </div>
+                    )}
                     {user.id}
                   </div>
 
@@ -102,27 +118,33 @@ const UserActivity = () => {
                   <span className="w-fit">{user.program}</span>
 
                   {/* Button */}
-                  <div className="flex justify-end w-fit">
-                    <div
-                      className="flex p-[2px] w-fit rounded-[25px]"
-                      style={{
-                        backgroundImage:
-                          "linear-gradient(90deg, #FF7800 0%, #FFE601 100%)",
-                      }}
-                    >
-                      <div className="bg-neutral-10 rounded-[25px]">
-                        <button
-                          className="px-4 py-2 text-white rounded-[25px] text-sm font-medium text-[8px] sm:text-[12px] md:text-base text-nowrap"
-                          style={{
-                            backgroundImage:
-                              "linear-gradient(90deg, rgba(255, 120, 0, 0.40) 0%, rgba(255, 230, 1, 0.40) 100%)",
-                          }}
-                        >
-                          View Profile
-                        </button>
+                  {user?.isViewProfileDisabled ? (
+                    <button className="rounded-[25px] bg-neutral-55 px-3 py-2 text-neutral-10 w-fit">
+                      View Profile
+                    </button>
+                  ) : (
+                    <div className="flex justify-end w-fit">
+                      <div
+                        className="flex items-center justify-center p-[1px] w-fit rounded-[25px]"
+                        style={{
+                          backgroundImage:
+                            "linear-gradient(90deg, #FF7800 0%, #FFE601 100%)",
+                        }}
+                      >
+                        <div className="bg-neutral-10 rounded-[25px] h-full fle items-center justify-center">
+                          <button
+                            className="px-4 py-[9px] text-white rounded-[25px] text-sm font-medium text-[8px] sm:text-[12px] md:text-base text-nowrap h-full"
+                            style={{
+                              backgroundImage:
+                                "linear-gradient(90deg, rgba(255, 120, 0, 0.20) 49.52%, rgba(255, 230, 1, 0.20) 100%)",
+                            }}
+                          >
+                            View Profile
+                          </button>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               ))}
             </div>

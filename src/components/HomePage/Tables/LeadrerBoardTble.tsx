@@ -26,7 +26,7 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
         <span className="w-fit">Position</span>
         <span className="w-fit mr-5">User</span>
         <span className="w-fit text-center">Weekly Profit</span>
-        <span className="w-fit text-right">Profile</span>
+        <span className="w-fit text-right">Visit Profile</span>
       </div>
 
       {/* Table Rows */}
@@ -34,7 +34,7 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
         {data.map((user, index) => (
           <div
             key={index}
-            className="flex justify-between items-center bg-neutral-900 rounded-full px-4 md:px-7 py-3 gap-4"
+            className="flex justify-between items-center bg-neutral-50 rounded-full px-4 md:px-7 py-2 gap-4"
           >
             {/* Position */}
             <span className="text-white text-xs sm:text-[12px] md:text-base font-semibold w-fit">
@@ -42,7 +42,7 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
             </span>
 
             {/* User Details */}
-            <div className="flex items-center gap-3 flex-1 min-w-[150px] max-w-[200px]">
+            <div className="flex items-center gap-3 flex-1 ">
               <Image
                 src={user.avatar}
                 alt={user.name}
@@ -73,19 +73,19 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
             {/* Button */}
             <div className="flex justify-end w-fit">
               <div
-                className="flex p-[2px] w-fit rounded-[25px]"
+                className="flex items-center justify-center p-[1px] w-fit rounded-[25px]"
                 style={{
                   backgroundImage:
                     "linear-gradient(90deg, #FF7800 0%, #FFE601 100%)",
                 }}
               >
-                <div className="bg-neutral-10 rounded-[25px]">
+                <div className="bg-neutral-10 rounded-[25px] h-full fle items-center justify-center">
                   <button
                     onClick={() => onJoinClick?.(user)}
-                    className="px-4 py-2 text-white rounded-[25px] text-sm font-medium text-[8px] sm:text-[12px] md:text-base text-nowrap"
+                    className="px-4 py-[9px] text-white rounded-[25px] text-sm font-medium text-[8px] sm:text-[12px] md:text-base text-nowrap h-full"
                     style={{
                       backgroundImage:
-                        "linear-gradient(90deg, rgba(255, 120, 0, 0.40) 0%, rgba(255, 230, 1, 0.40) 100%)",
+                        "linear-gradient(90deg, rgba(255, 120, 0, 0.20) 49.52%, rgba(255, 230, 1, 0.20) 100%)",
                     }}
                   >
                    View Profile
