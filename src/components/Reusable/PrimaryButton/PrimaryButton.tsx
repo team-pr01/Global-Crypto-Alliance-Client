@@ -20,7 +20,7 @@ const PrimaryButton: React.FC<GradientButtonProps> = ({
         `
         cursor-pointer
         relative w-[300px] px-[39px] py-[14px] xl:py-[17px]
-        text-lg text-neutral-10 font-Jost rounded-full font-medium
+        text-lg text-neutral-10 font-Jost rounded-full font-semibold
         flex flex-col justify-center items-center gap-1
         bg-[linear-gradient(90deg,_#FF7800_0%,_#FFE601_100%)]
         group transition-all duration-300
@@ -35,7 +35,7 @@ const PrimaryButton: React.FC<GradientButtonProps> = ({
         className="absolute top-0 right-0 h-full pointer-events-none"
       />
 
-      <button className="flex flex-row justify-center items-center gap-2 z-10 font-semibold">
+      <button className="flex flex-row justify-center items-center gap-2 z-10 d">
         {icon && <span className="size-5">{icon}</span>}
         {label}
       </button>
