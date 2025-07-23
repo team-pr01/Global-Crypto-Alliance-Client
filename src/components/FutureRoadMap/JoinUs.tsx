@@ -8,7 +8,7 @@ const JoinUs = () => {
         <div className="flex flex-col items-center w-full lg:w-[50%]">
       <Image src={IMAGES.pdf} alt="" />
         {/* Card 1 */}
-        <div className="bg-neutral-10 rounded-2xl relative p-9 h-fit ">
+        <div className="bg-neutral-10 rounded-2xl relative px-4 lg:px-9 py-4 lg:py-9 h-fit ">
           <Image
             src={IMAGES.gradientBottomLeft}
             alt=""
@@ -81,16 +81,20 @@ const JoinUs = () => {
             >
               PDF
             </h1>
-            <p className="text-white text-center font-Inter mt-4">
+            <p className="text-white text-center font-Inter mt-4 text-xs lg:text-base">
               Global Crypto Alliance aims to build a safe, transparent and
               accessible digital ecosystem for all. Through our platform every
               person will to ensure a fair opportunity for financial Freedom,
               data privacy and a strong career development through blockchain
-              technology Download our official document and learn how the C3
+              technology.
+            </p>
+            <p className="text-white text-center font-Inter mt-3 lg:mt-0 text-xs lg:text-base">
+             Download our official document and learn how the C3
               community system works automatically and sustainably.
             </p>
 
-            <div className="relative w-full px-[39px] py-[17px] text-lg text-neutral-10 font-Jost rounded-full font-semibold flex flex-col justify-center items-center gap-1 bg-gradient-button mt-8">
+
+            <div className="relative w-full px-[39px] py-[14px] lg:py-[17px] text-lg text-neutral-10 font-Jost rounded-full font-semibold flex flex-col justify-center items-center gap-1 bg-gradient-button mt-8">
               <Image
                 src={IMAGES.buttonDesign}
                 alt=""

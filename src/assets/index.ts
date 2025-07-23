@@ -11,9 +11,9 @@ import medel from "../assets/icons/medel.svg";
 
 // gradient bg
 import accountPreview from "./gradient-bg/accout-preview.svg";
+import gradientCircle from "./gradient-bg/gradient-circle.png";
 
 // images
-// import comingSoonPage from "../assets/images/02 - Distance Nebulae.png";
 import layoutBg from "../assets/images/layout-bg.png";
 import heroBg from "../assets/images/hero-bg.png";
 import heroBgSmall from "../assets/images/hero-bg-small.png";
@@ -40,6 +40,9 @@ import aboutUsCoin from "../assets/images/about-us-coin.png";
 import tutorialcardBg from "../assets/images/tutorial-card-bg.png";
 import user from "../assets/images/user.svg";
 import needHelp from "../assets/images/need-help.png";
+import membersTransfered from "../assets/images/mebers-transfered.png";
+import membersReceived from "../assets/images/members-received.png";
+import members from "../assets/images/members.png";
 
 export const IMAGES = {
   layoutBg,
@@ -68,6 +71,9 @@ export const IMAGES = {
   tutorialcardBg,
   user,
   needHelp,
+  membersTransfered,
+  membersReceived,
+  members
 };
 
 export const ICONS = {
@@ -82,4 +88,5 @@ export const ICONS = {
 };
 export const GRADIENT_BG = {
   accountPreview,
+  gradientCircle,
 };
