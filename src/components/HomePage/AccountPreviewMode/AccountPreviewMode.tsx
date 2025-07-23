@@ -43,7 +43,7 @@ const AccountPreviewMode = () => {
                       ></div>
 
                       <button
-                        className="text-transparent bg-clip-text p-4 text-lg font-medium"
+                        className="text-transparent bg-clip-text px-[39px] py-[14px] xl:py-[17px] text-lg font-medium"
                         style={{
                           backgroundImage:
                             "linear-gradient(90deg, #FF7801 0%, #FFE601 100%)",
@@ -71,7 +71,7 @@ const AccountPreviewMode = () => {
                   >
                     View a Random Account
                   </p>
-                  <div className="relative w-full px-[39px] py-[17px] mt-1 text-lg text-neutral-10 font-Jost rounded-full font-medium flex flex-col justify-center items-center gap-1 bg-gradient-button ">
+                  <div className="relative w-full px-[39px] py-[14px] xl:py-[17px] mt-1 text-lg text-neutral-10 font-Jost rounded-full font-semibold flex flex-col justify-center items-center gap-1 bg-gradient-button ">
                     <Image
                       src={IMAGES.buttonDesign}
                       alt=""

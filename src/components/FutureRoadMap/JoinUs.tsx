@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const JoinUs = () => {
   return (
-    <div>
+    <div className="">
       <div className="flex flex-col-reverse lg:flex-row gap-[30px]">
         <div className="flex flex-col items-center w-full lg:w-[50%]">
       <Image src={IMAGES.pdf} alt="" />
@@ -94,7 +94,7 @@ const JoinUs = () => {
             </p>
 
 
-            <div className="relative w-full px-[39px] py-[14px] lg:py-[17px] text-lg text-neutral-10 font-Jost rounded-full font-semibold flex flex-col justify-center items-center gap-1 bg-gradient-button mt-8">
+            <div className="relative w-full px-[39px] py-[14px] xl:py-[17px] text-lg text-neutral-10 font-Jost rounded-full font-semibold flex flex-col justify-center items-center gap-1 bg-gradient-button mt-8">
               <Image
                 src={IMAGES.buttonDesign}
                 alt=""
@@ -107,7 +107,7 @@ const JoinUs = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-neutral-10 rounded-2xl relative p-9 w-full lg:w-[50%] mt-[285]">
+        <div className="bg-neutral-10 rounded-2xl relative p-9 w-full lg:w-[50%] mt-0 xl:mt-[285px] flex flex-col justify-end">
           <Image src={IMAGES.linnerBg} alt="" className="absolute right-0" />
           <Image
             src={IMAGES.linnerBg}
@@ -139,7 +139,7 @@ const JoinUs = () => {
                 ></div>
 
                 <button
-                  className="text-transparent flex flex-row items-center justify-center bg-clip-text p-4 text-lg font-medium gap-2"
+                  className="text-transparent flex flex-row items-center justify-center bg-clip-text px-[39px] py-[14px] xl:py-[17px] text-lg font-medium gap-2"
                   style={{
                     backgroundImage:
                       "linear-gradient(90deg, #FF7801 0%, #FFE601 100%)",

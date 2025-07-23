@@ -84,25 +84,25 @@ const UserActivity = () => {
               {leaderboardData.map((user, index) => (
                 <div
                   key={index}
-                  className="flex justify-between items-center gap-4"
+                  className="flex justify-between items-center gap-4 text-white text-[10px] xl:text-lg font-semibold text-center"
                 >
                   {/* Position */}
-                  <div className="text-white text-xs sm:text-[12px] md:text-base font-semibold w-fit p-[10px] bg-primary-10 rounded-md">
+                  <div className="w-fit p-[10px] bg-primary-10 rounded-md">
                     {user.id}
                   </div>
 
                   {/* Profit */}
-                  <span className="text-white text-xs md:text-base font-semibold text-center w-fit">
+                  <span className="w-fit">
                     {user.profit}
                   </span>
 
                   {/* Time */}
-                  <span className="text-white text-xs md:text-base font-semibold text-center w-fit">
+                  <span className="w-fit">
                     {user.time}
                   </span>
 
                   {/* Program */}
-                  <span className="text-white text-xs md:text-base font-semibold text-center w-fit">
+                  <span className="w-fit">
                     {user.program}
                   </span>
 
@@ -132,7 +132,7 @@ const UserActivity = () => {
               ))}
             </div>
           </div>
-          <button className="bg-gradient-button py-[14px] md:py-[10px] text-white font-Jost font-medium text-center rounded-[90px] w-full max-w-[1000px] mx-auto mt-8 cursor-pointer">
+          <button className="bg-gradient-button px-[39px] py-[14px] xl:py-[17px] text-neutral-10 font-Jost font-semibold text-center rounded-[90px] w-full max-w-[1000px] mx-auto mt-8 cursor-pointer">
             View More
           </button>
         </div>

@@ -12,7 +12,7 @@ const ReusableHeading: React.FC<ReusableHeadingProps> = ({
       className={`text-xl md:text-[40px] text-center md:text-start font-bold text-white ${className}`}
     >
       <span
-        className="text-transparent bg-clip-text"
+        className="text-transparent bg-clip-text gradient-text"
         style={{
           backgroundImage:
             "linear-gradient(90deg, #FF7800 51.71%, #FFE601 100%)",

@@ -36,7 +36,7 @@ const UserStats = () => {
             alt=""
             className="absolute left-0 rotate-180 h-full"
           />
-          <Image src={item.image} alt="" className="size-[116px] mx-auto" />
+          <Image src={item.image} alt="" className="size-[76px] md:size-[116px] mx-auto" />
           <p className="text-white text-sm md:text-lg text-center mt-3 md:mt-[18px]">
             {item.title}
           </p>

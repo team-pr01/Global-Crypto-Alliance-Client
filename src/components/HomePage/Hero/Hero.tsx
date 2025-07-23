@@ -5,7 +5,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <Container>
-      <div className="relative w-full h-full mt-10 ">
+      <div className="relative w-full h-full">
         {/* Blurred background layer */}
         <Image
         
@@ -39,7 +39,7 @@ const Hero = () => {
                 Opportunities.
               </p>
               <div className="flex flex-col-reverse lg:flex-row gap-3 items-center md:items-baseline w-full mt-3">
-                <div className="relative w-[300px] px-[39px] py-[17px] text-lg text-neutral-10 font-Jost rounded-full font-medium flex flex-col justify-center items-center gap-1 bg-gradient-button ">
+                <div className="relative w-[300px] px-[39px] py-[14px] xl:py-[17px] text-lg text-neutral-10 font-Jost rounded-full font-medium flex flex-col justify-center items-center gap-1 bg-gradient-button ">
                   <Image
                     src={IMAGES.buttonDesign}
                     alt=""
@@ -67,7 +67,7 @@ const Hero = () => {
                     ></div>
 
                     <button
-                      className="text-transparent flex flex-row items-center justify-center bg-clip-text p-4 text-lg font-medium gap-2"
+                      className="text-transparent flex flex-row items-center justify-center bg-clip-text px-[39px] py-[14px] xl:py-[17px] text-lg font-medium gap-2"
                       style={{
                         backgroundImage:
                           "linear-gradient(90deg, #FF7801 0%, #FFE601 100%)",

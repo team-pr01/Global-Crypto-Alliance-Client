@@ -13,7 +13,7 @@ const AlltimeTopEarners = () => {
         </div>
 
         <AllTimeLeaderBoard />
-        <div className="relative md:hidden w-full mt-2 px-[39px] py-[17px] text-lg text-neutral-10 font-Jost rounded-full font-semibold flex flex-col justify-center items-center gap-1 bg-gradient-button ">
+        <div className="relative md:hidden w-full mt-2 px-[39px] py-[14px] xl:py-[17px] text-lg text-neutral-10 font-Jost rounded-full font-semibold flex flex-col justify-center items-center gap-1 bg-gradient-button ">
           <Image
             src={IMAGES.buttonDesign}
             alt=""
