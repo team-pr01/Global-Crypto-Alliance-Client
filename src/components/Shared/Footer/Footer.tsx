@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
       </Container>
       <div className="shadow-footer py-5">
-        <p className="font-Jost text-lg text-white text-center">
+        <p className="font-Jost text-sm xl:text-lg text-white text-center">
           ©copyright2025@Globalcryptoallaiance.com
         </p>
       </div>

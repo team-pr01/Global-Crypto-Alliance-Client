@@ -1,17 +1,36 @@
+"use client";
+
 import { ICONS, IMAGES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import clsx from "clsx";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="h-fit w-full">
+    <div
+      className={clsx(
+        "fixed top-0 left-0 w-full z-50 transition-all duration-300",
+        scrolled && "backdrop-blur-[24px] bg-gradient-future-roadmap py-2"
+      )}
+    >
       <Container>
         <div className="flex justify-between items-center py-5">
           <Image
             src={IMAGES.logo}
             alt="Logo"
-            className="md:h-[103px] md:w-[123px] h-[60px] w-[69px]"
+            className="md:w-[100px] w-[69px]"
           />
           <div
             className="w-fit md:w-[220px] p-[1px] text-white font-semibold text-xl rounded-full"
@@ -35,7 +54,11 @@ const Navbar = () => {
                     "linear-gradient(90deg, #FF7801 0%, #FFE601 100%)",
                 }}
               >
-                <Image src={ICONS.wallet} alt=" " className="size-[14px] md:size-5" />
+                <Image
+                  src={ICONS.wallet}
+                  alt="wallet"
+                  className="size-[14px] md:size-5"
+                />
                 <span>Connect Wallet</span>
               </button>
             </div>

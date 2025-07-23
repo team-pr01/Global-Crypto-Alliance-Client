@@ -1,5 +1,6 @@
 import { IMAGES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
+import PrimaryButton from "@/components/Reusable/PrimaryButton/PrimaryButton";
 import Image from "next/image";
 
 const NeedHelp = () => {
@@ -86,14 +87,10 @@ const NeedHelp = () => {
                 online chat
               </p>
 
-              <div className="relative w-full px-5 lg:px-[39px] py-[17px] text-neutral-10 font-Jost rounded-full font-semibold flex flex-col justify-center items-center gap-1 bg-gradient-button mt-8 text-sm md:text-lg">
-                <Image
-                  src={IMAGES.buttonDesign}
-                  alt=""
-                  className="absolute top-0 right-0 h-full "
-                />
-                <button className="z-10">Contact our support team</button>
-              </div>
+              <PrimaryButton
+                label="Contact our support team"
+                className="w-full mt-8"
+              />
             </div>
           </div>
         </div>

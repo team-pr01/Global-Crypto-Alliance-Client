@@ -2,6 +2,7 @@ import Container from "@/components/Reusable/Container/Container";
 import UserStats from "./UserStats";
 import { GRADIENT_BG, IMAGES } from "@/assets";
 import Image from "next/image";
+import PrimaryButton from "@/components/Reusable/PrimaryButton/PrimaryButton";
 
 const UserActivity = () => {
   const leaderboardData = [
@@ -92,19 +93,13 @@ const UserActivity = () => {
                   </div>
 
                   {/* Profit */}
-                  <span className="w-fit">
-                    {user.profit}
-                  </span>
+                  <span className="w-fit">{user.profit}</span>
 
                   {/* Time */}
-                  <span className="w-fit">
-                    {user.time}
-                  </span>
+                  <span className="w-fit">{user.time}</span>
 
                   {/* Program */}
-                  <span className="w-fit">
-                    {user.program}
-                  </span>
+                  <span className="w-fit">{user.program}</span>
 
                   {/* Button */}
                   <div className="flex justify-end w-fit">
@@ -132,9 +127,10 @@ const UserActivity = () => {
               ))}
             </div>
           </div>
-          <button className="bg-gradient-button px-[39px] py-[14px] xl:py-[17px] text-neutral-10 font-Jost font-semibold text-center rounded-[90px] w-full max-w-[1000px] mx-auto mt-8 cursor-pointer">
-            View More
-          </button>
+          <PrimaryButton
+            label="View More"
+            className="w-full max-w-[1000px] mx-auto mt-8"
+          />
         </div>
       </div>
     </Container>

@@ -1,6 +1,7 @@
 import { IMAGES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
 import ReusableHeading from "@/components/Reusable/Heading/Heading";
+import PrimaryButton from "@/components/Reusable/PrimaryButton/PrimaryButton";
 import Image from "next/image";
 import React from "react";
 
@@ -20,16 +21,10 @@ const AboutUs = () => {
               and globally accessible ecosystem that places users in full
               control of their digital assets.
             </p>
-            <div className="relative w-[300px] px-[39px] py-[14px] xl:py-[17px] mt-1 text-lg text-neutral-10 font-Jost rounded-full font-semibold flex flex-col justify-center items-center gap-1 bg-gradient-button ">
-              <Image
-                src={IMAGES.buttonDesign}
-                alt=""
-                className="absolute top-0 right-0 h-full "
-              />
-              <button className="flex flex-row justify-center items-center gap-2">
-                View More
-              </button>
-            </div>
+            <PrimaryButton
+              label="View More"
+              className="xl:w-[320px]"
+            />
           </div>
 
           <div className="w-full md:w-[40%]">

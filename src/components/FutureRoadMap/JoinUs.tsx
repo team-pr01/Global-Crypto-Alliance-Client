@@ -1,109 +1,102 @@
 import { ICONS, IMAGES } from "@/assets";
 import Image from "next/image";
+import PrimaryButton from "../Reusable/PrimaryButton/PrimaryButton";
 
 const JoinUs = () => {
   return (
     <div className="">
       <div className="flex flex-col-reverse lg:flex-row gap-[30px]">
         <div className="flex flex-col items-center w-full lg:w-[50%]">
-      <Image src={IMAGES.pdf} alt="" />
-        {/* Card 1 */}
-        <div className="bg-neutral-10 rounded-2xl relative px-4 lg:px-9 py-4 lg:py-9 h-fit ">
-          <Image
-            src={IMAGES.gradientBottomLeft}
-            alt=""
-            className="absolute bottom-0 left-0"
-          />
-          <Image
-            src={IMAGES.gradientTopRight}
-            alt=""
-            className="absolute top-0 right-0"
-          />
-          <div className="absolute top-0 left-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="224"
-              height="210"
-              viewBox="0 0 224 210"
-              fill="none"
-            >
-              <g clip-path="url(#clip0_3_7975)">
-                <g filter="url(#filter0_f_3_7975)">
-                  <circle
-                    cx="20.5"
-                    cy="18.6001"
-                    r="93.5"
-                    fill="#FF7800"
-                    fill-opacity="0.1"
-                  />
+          <Image src={IMAGES.pdf} alt="" />
+          {/* Card 1 */}
+          <div className="bg-neutral-10 rounded-2xl relative px-4 lg:px-9 py-4 lg:py-9 h-fit ">
+            <Image
+              src={IMAGES.gradientBottomLeft}
+              alt=""
+              className="absolute bottom-0 left-0"
+            />
+            <Image
+              src={IMAGES.gradientTopRight}
+              alt=""
+              className="absolute top-0 right-0"
+            />
+            <div className="absolute top-0 left-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="224"
+                height="210"
+                viewBox="0 0 224 210"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_3_7975)">
+                  <g filter="url(#filter0_f_3_7975)">
+                    <circle
+                      cx="20.5"
+                      cy="18.6001"
+                      r="93.5"
+                      fill="#FF7800"
+                      fill-opacity="0.1"
+                    />
+                  </g>
                 </g>
-              </g>
-              <defs>
-                <filter
-                  id="filter0_f_3_7975"
-                  x="-174"
-                  y="-175.9"
-                  width="389"
-                  height="389"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="BackgroundImageFix"
-                    result="shape"
-                  />
-                  <feGaussianBlur
-                    stdDeviation="50.5"
-                    result="effect1_foregroundBlur_3_7975"
-                  />
-                </filter>
-                <clipPath id="clip0_3_7975">
-                  <path
-                    d="M0 16.1001C0 7.26354 7.16344 0.100098 16 0.100098H224V209.1H0V16.1001Z"
-                    fill="white"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <h1
-              style={{
-                backgroundImage:
-                  "linear-gradient(88deg, #FFE601 1.95%, #FF7800 69.42%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-              className="text-[28px] font-bold font-Jost text-center"
-            >
-              PDF
-            </h1>
-            <p className="text-white text-center font-Inter mt-4 text-xs lg:text-base">
-              Global Crypto Alliance aims to build a safe, transparent and
-              accessible digital ecosystem for all. Through our platform every
-              person will to ensure a fair opportunity for financial Freedom,
-              data privacy and a strong career development through blockchain
-              technology.
-            </p>
-            <p className="text-white text-center font-Inter mt-3 lg:mt-0 text-xs lg:text-base">
-             Download our official document and learn how the C3
-              community system works automatically and sustainably.
-            </p>
+                <defs>
+                  <filter
+                    id="filter0_f_3_7975"
+                    x="-174"
+                    y="-175.9"
+                    width="389"
+                    height="389"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="50.5"
+                      result="effect1_foregroundBlur_3_7975"
+                    />
+                  </filter>
+                  <clipPath id="clip0_3_7975">
+                    <path
+                      d="M0 16.1001C0 7.26354 7.16344 0.100098 16 0.100098H224V209.1H0V16.1001Z"
+                      fill="white"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <h1
+                style={{
+                  backgroundImage:
+                    "linear-gradient(88deg, #FFE601 1.95%, #FF7800 69.42%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+                className="text-[28px] font-bold font-Jost text-center"
+              >
+                PDF
+              </h1>
+              <p className="text-white text-center font-Inter mt-4 text-xs lg:text-base">
+                Global Crypto Alliance aims to build a safe, transparent and
+                accessible digital ecosystem for all. Through our platform every
+                person will to ensure a fair opportunity for financial Freedom,
+                data privacy and a strong career development through blockchain
+                technology.
+              </p>
+              <p className="text-white text-center font-Inter mt-3 lg:mt-0 text-xs lg:text-base">
+                Download our official document and learn how the C3 community
+                system works automatically and sustainably.
+              </p>
 
-
-            <div className="relative w-full px-[39px] py-[14px] xl:py-[17px] text-lg text-neutral-10 font-Jost rounded-full font-semibold flex flex-col justify-center items-center gap-1 bg-gradient-button mt-8">
-              <Image
-                src={IMAGES.buttonDesign}
-                alt=""
-                className="absolute top-0 right-0 h-full "
-              />
-              <button className="">View More</button>
+              <PrimaryButton label="View More" className="w-full mt-8" />
             </div>
           </div>
-        </div>
         </div>
 
         {/* Card 2 */}

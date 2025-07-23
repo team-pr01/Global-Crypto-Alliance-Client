@@ -1,5 +1,6 @@
 import { GRADIENT_BG, IMAGES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
+import PrimaryButton from "@/components/Reusable/PrimaryButton/PrimaryButton";
 import Image from "next/image";
 import React from "react";
 
@@ -71,16 +72,10 @@ const AccountPreviewMode = () => {
                   >
                     View a Random Account
                   </p>
-                  <div className="relative w-full px-[39px] py-[14px] xl:py-[17px] mt-1 text-lg text-neutral-10 font-Jost rounded-full font-semibold flex flex-col justify-center items-center gap-1 bg-gradient-button ">
-                    <Image
-                      src={IMAGES.buttonDesign}
-                      alt=""
-                      className="absolute top-0 right-0 h-full "
-                    />
-                    <button className="flex flex-row justify-center items-center gap-2">
-                      Check Demo
-                    </button>
-                  </div>
+                  <PrimaryButton
+              label="Check Demo"
+              className="w-full"
+            />
                 </div>
               </div>
             </div>
