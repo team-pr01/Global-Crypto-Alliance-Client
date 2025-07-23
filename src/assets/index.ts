@@ -26,6 +26,8 @@ import pdf from "../assets/images/pdf.png";
 import gradientBottomLeft from "../assets/images/gradient-bottom-left.svg";
 import gradientTopRight from "../assets/images/gradient-top-right.svg";
 import linnerBg from "../assets/images/linner-bg.png";
+import linnerBg2 from "../assets/gradient-bg/linner-bg.png";
+import lifetimeEarning from "../assets/images/lifetime-earning.png";
 
 export const IMAGES = {
   layoutBg,
@@ -41,6 +43,8 @@ export const IMAGES = {
   gradientBottomLeft,
   gradientTopRight,
   linnerBg,
+  linnerBg2,
+  lifetimeEarning,
 };
 
 export const ICONS = {
