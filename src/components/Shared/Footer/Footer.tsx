@@ -24,7 +24,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="bg-neutral-10 pt-[56px] font-Inter">
+    <div className="bg-neutral-10 pt-[56px] font-Inter mt-7 xl:mt-[100px]">
       <Container>
         <div className="flex flex-col items-center justify-center mb-[29px] md:mb-[22px]">
           <Image src={IMAGES.logo} alt="" className="w-[88px] md:w-[200px]" />
