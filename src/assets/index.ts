@@ -16,9 +16,10 @@ import gradientCircle from "./gradient-bg/gradient-circle.png";
 // images
 import layoutBg from "../assets/images/layout-bg.png";
 import heroBg from "../assets/images/hero-bg.png";
-import heroBgSmall from "../assets/images/hero-bg-small.png";
+import heroBgSmall from "../assets/images/hero-bg-small.svg";
 import logo from "../assets/images/logo.png";
 import companyNameLogo from "../assets/images/company-name-logo.png";
+import logoName from "../assets/images/logo-name.png";
 import heroImage from "../assets/images/hero-image.png";
 import heroImage2 from "../assets/images/hero-image-2.png";
 import coinImage from "../assets/images/coin-image.png";
@@ -43,11 +44,13 @@ import needHelp from "../assets/images/need-help.png";
 import membersTransfered from "../assets/images/mebers-transfered.png";
 import membersReceived from "../assets/images/members-received.png";
 import members from "../assets/images/members.png";
+import heroGradient2 from "../assets/images/hero-gradient-2.svg";
 
 export const IMAGES = {
   layoutBg,
   logo,
   companyNameLogo,
+  logoName,
   heroImage,
   heroBg,
   heroBgSmall,
@@ -73,7 +76,8 @@ export const IMAGES = {
   needHelp,
   membersTransfered,
   membersReceived,
-  members
+  members,
+  heroGradient2,
 };
 
 export const ICONS = {

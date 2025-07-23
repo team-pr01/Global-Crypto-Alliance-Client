@@ -50,6 +50,7 @@
   --bg-text-bg-gradient:linear-gradient(90deg, #FF7800 46.93%, #FFE601 100%);
   --bg-border-bg-gradient:linear-gradient(90deg, #FF7800 100%, #FFE601 100%);
   --bg-gradient-button:linear-gradient(90deg, #FF7800 0%, #FFE601 100%);
+  --bg-gradient-hero-circle:linear-gradient(180deg, rgba(255, 230, 1, 0.50) 0%, rgba(255, 120, 0, 0.50) 73.56%);
 
   
 }
@@ -73,6 +74,9 @@
 }
 .bg-gradient-button {
   background: var(--bg-gradient-button);
+}
+.bg-gradient-hero-circle {
+  background: var(--bg-gradient-hero-circle);
 }
 /* custom scrollbar for a specific section */ 
 .custom-scrollbar {

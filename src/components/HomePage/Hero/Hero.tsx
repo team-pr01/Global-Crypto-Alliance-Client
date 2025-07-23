@@ -18,22 +18,29 @@ const Hero = () => {
           src={IMAGES.heroBgSmall}
           alt="Blurred Background"
           fill
-          className="object-fit md:hidden h-full absolute inset-0 z-0"
+          className=" md:hidden h-full absolute inset-0 z-0"
         />
 
         {/* Content above the blurred background */}
-        <div className="p-[2px]">
-          <div className="relative z-10 py-3 gap-6 flex flex-col-reverse md:flex-row justify-between backdrop-blur-md rounded-2xl items-center w-full">
-            <div className="flex w-full md:w-[60%] flex-col gap-3 md:py-10 md:pl-21 justify-center items-center md:items-start">
-              <p className="text-xl text-white leading-[26px] font-semibold">
-                Welcome To
-              </p>
+        <div className="bg-gradient-future-roadmap p-[1px] backdrop-blur-[24px] rounded-2xl">
+            <div className="flex w-full md:w-[60%] bg-neutral-10 flex-col md:py-10 md:pl-21 justify-center items-center md:items-start px-2 rounded-2xl relative">
+              
+              <div className="size-[114px] rounded-full bg-gradient-hero-circle blur-[22px] absolute top-20 z-0"></div>
               <Image
                 src={IMAGES.companyNameLogo}
                 alt="Global Crypto Alliance"
-                className="w-64 md:w-105 h-14 px-3 md:h-20 object-contain"
+                className="w-[211px] h-[143px] z-10 mt-[30px]"
               />
-              <p className="mt-1 font-Inter text-sm md:text-lg text-center md:text-start font-medium leading-1.4 text-white text-shadow-2xs px-3 md:px-0">
+
+              <p className="text-xl text-white leading-[26px] font-semibold font-Jost mt-6">
+                Welcome To
+              </p>
+              <Image
+                src={IMAGES.logoName}
+                alt="Global Crypto Alliance"
+                className="z-10 mt-3 w-[253px]"
+              />
+              <p className="mt-2 font-Inter text-sm md:text-lg text-center md:text-start font-medium leading-[22px] text-white text-shadow-2xs">
                 Unique and Revolutionary Business Model of 21st Century
                 SUSTAINABILITY-SCALABILITY TRANSPARENCY & SECURITY Limitless
                 Opportunities.
@@ -46,7 +53,7 @@ const Hero = () => {
                 />
 
                 <div
-                  className="w-[300px] p-[1px] text-white font-semibold text-xl rounded-full cursor-pointer"
+                  className="w-[300px] p-[1px] text-white font-semibold text-xl rounded-full cursor-pointer z-10"
                   style={{
                     background:
                       "linear-gradient(90deg, #FF7800 0%, #FFE601 100%)",
@@ -78,22 +85,10 @@ const Hero = () => {
                     </button>
                   </div>
                 </div>
+
+                <Image src={IMAGES.heroGradient2} alt="" className="absolute right-0 bottom-0 rounded-br-2xl z-0" />
               </div>
             </div>
-
-            <div className="w-full md:w-[40%] z-20 flex justify-center ">
-              <Image
-                src={IMAGES.heroImage}
-                alt="Global Crypto Alliance Hero Image"
-                className="w-full h-full md:block hidden object-contain"
-              />
-              <Image
-                src={IMAGES.heroImage2}
-                alt="Global Crypto Alliance Hero Image"
-                className="w-[300px] h-full pt-4 px-20 md:hidden object-contain"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </Container>
