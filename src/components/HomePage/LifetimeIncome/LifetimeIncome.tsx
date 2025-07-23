@@ -1,0 +1,52 @@
+/* eslint-disable react/no-unescaped-entities */
+import { IMAGES } from "@/assets";
+import Container from "@/components/Reusable/Container/Container";
+import Image from "next/image";
+
+const LifetimeIncome = () => {
+  return (
+    <Container>
+      <div className="rounded-2xl bg-neutral-10 relative p-3 xl:p-6 flex flex-col-reverse xl:flex-row gap-0 xl:gap-10 items-center justify-between mt-6 xl:mt-[110px]">
+        <Image
+          src={IMAGES.linnerBg2}
+          alt=""
+          className="absolute top-3 xl:top-6 right-3 xl:right-6"
+        />
+        <Image
+          src={IMAGES.linnerBg2}
+          alt=""
+          className="absolute bottom-3 xl:bottom-6 left-3 xl:left-6 rotate-180"
+        />
+        <div className="p-5 xl:p-[90px]">
+          <h1
+            style={{
+              backgroundImage:
+                "linear-gradient(90deg, #FF7800 51.71%, #FFE601 100%)",
+            }}
+            className="text-base xl:text-[28px] font-bold text-transparent bg-clip-text font-Jost text-center xl:text-start max-w-full xl:max-w-[685px] mx-auto xl:mx-0"
+          >
+            Imagine LIFETIME Income Simply By Growing Your Community! You Build
+            Once, and Earn FOREVER!
+          </h1>
+          <p className="text-sm xl:text-lg font-medium text-white font-Inter mt-3 xl:mt-5 text-center xl:text-start">
+            There are no limits, no middlemen. Begin your business journey with
+            C3 Crypto Global Alliance – a platform that's fully decentralized,
+            transparent, and 100% secured by blockchain technology on opBNB, a
+            Layer 2 blockchain by Binance.
+          </p>
+          <p className="text-sm font-medium text-white font-Inter mt-3 xl:mt-5 text-center xl:text-start">
+            Because freedom isn't just a dream – it's a system that works for
+            you.
+          </p>
+        </div>
+        <Image
+          src={IMAGES.lifetimeEarning}
+          alt=""
+          className="w-[140px] xl:w-[300px] mx-14 mt-10 xl:mt-0 xl:mx-12"
+        />
+      </div>
+    </Container>
+  );
+};
+
+export default LifetimeIncome;

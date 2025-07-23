@@ -27,6 +27,15 @@ import pdf from "../assets/images/pdf.png";
 import gradientBottomLeft from "../assets/images/gradient-bottom-left.svg";
 import gradientTopRight from "../assets/images/gradient-top-right.svg";
 import linnerBg from "../assets/images/linner-bg.png";
+import linnerBg2 from "../assets/gradient-bg/linner-bg.png";
+import lifetimeEarning from "../assets/images/lifetime-earning.png";
+import primeStarter from "../assets/images/prime-starter.png";
+import personalPartner from "../assets/images/personal-partner.png";
+import limitlessGeneration from "../assets/images/limitless-generation.png";
+import primeStarter2 from "../assets/images/prime-starter2.png";
+import eliteLevel from "../assets/images/elite-level.png";
+import royaltyBrown from "../assets/images/royalty-brown.png";
+import rocket from "../assets/images/rocket.png";
 import aboutUsCoin from "../assets/images/about-us-coin.png";
 import tutorialcardBg from "../assets/images/tutorial-card-bg.png";
 import user from "../assets/images/user.svg";
@@ -45,6 +54,15 @@ export const IMAGES = {
   gradientBottomLeft,
   gradientTopRight,
   linnerBg,
+  linnerBg2,
+  lifetimeEarning,
+  primeStarter,
+  personalPartner,
+  limitlessGeneration,
+  primeStarter2,
+  eliteLevel,
+  royaltyBrown,
+  rocket,
   aboutUsCoin,
   tutorialcardBg,
   user
