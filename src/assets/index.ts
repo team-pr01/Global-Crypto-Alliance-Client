@@ -39,6 +39,7 @@ import rocket from "../assets/images/rocket.png";
 import aboutUsCoin from "../assets/images/about-us-coin.png";
 import tutorialcardBg from "../assets/images/tutorial-card-bg.png";
 import user from "../assets/images/user.svg";
+import needHelp from "../assets/images/need-help.png";
 
 export const IMAGES = {
   layoutBg,
@@ -65,7 +66,8 @@ export const IMAGES = {
   rocket,
   aboutUsCoin,
   tutorialcardBg,
-  user
+  user,
+  needHelp,
 };
 
 export const ICONS = {

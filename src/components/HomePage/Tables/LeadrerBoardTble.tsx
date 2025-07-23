@@ -22,7 +22,7 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
   return (
     <div className="w-full">
       {/* Table Header */}
-      <div className="flex justify-between text-[8px] sm:text-[12px] md:text-sm text-neutral-40 mb-4 px-6">
+      <div className="flex justify-between text-xs md:text-sm text-neutral-40 mb-4 px-6">
         <span className="w-fit">Position</span>
         <span className="w-fit mr-5">User</span>
         <span className="w-fit text-center">Weekly Profit</span>
@@ -30,15 +30,15 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
       </div>
 
       {/* Table Rows */}
-      <div className="flex flex-col gap-[1px] md:gap-4">
+      <div className="flex flex-col gap-2 md:gap-4">
         {data.map((user, index) => (
           <div
             key={index}
-            className="flex justify-between items-center bg-neutral-900 rounded-full px-7 py-3 gap-4"
+            className="flex justify-between items-center bg-neutral-900 rounded-full px-4 md:px-7 py-3 gap-4"
           >
             {/* Position */}
-            <span className="text-white text-[8px] sm:text-[12px] md:text-base font-semibold w-fit">
-              {user.position}
+            <span className="text-white text-xs sm:text-[12px] md:text-base font-semibold w-fit">
+              0{user.position}
             </span>
 
             {/* User Details */}
@@ -51,12 +51,12 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
                 className="rounded-full size-5 md:size-9"
               />
               <div>
-                <p className="text-white text-[8px] sm:text-[12px] md:text-base font-normal flex items-center gap-1">
+                <p className="text-white text-xs sm:text-[12px] md:text-base font-normal flex items-center">
                   {user.name}
                 </p>
-                <span className="text-neutral-40 text-[8px] sm:text-[12px] md:text-base">
+                <p className="text-neutral-40 text-xs sm:text-[12px] md:text-base">
                   ID: {user.id}
-                </span>
+                </p>
               </div>
               <Image
                 src={ICONS.medel}
@@ -66,23 +66,23 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
             </div>
 
             {/* Profit */}
-            <span className="text-white text-[8px] sm:text-[12px] md:text-base font-semibold text-center w-fit">
+            <span className="text-white text-xs md:text-base font-semibold text-center w-fit">
               {user.profit}
             </span>
 
             {/* Button */}
             <div className="flex justify-end w-fit">
               <div
-                className="flex p-[2px] w-fit rounded-full"
+                className="flex p-[2px] w-fit rounded-[25px]"
                 style={{
                   backgroundImage:
                     "linear-gradient(90deg, #FF7800 0%, #FFE601 100%)",
                 }}
               >
-                <div className="bg-neutral-10 rounded-full">
+                <div className="bg-neutral-10 rounded-[25px]">
                   <button
                     onClick={() => onJoinClick?.(user)}
-                    className="px-4 py-2 text-white rounded-full text-sm font-medium  text-[8px] sm:text-[12px] md:text-base"
+                    className="px-4 py-2 text-white rounded-[25px] text-sm font-medium text-[8px] sm:text-[12px] md:text-base text-nowrap"
                     style={{
                       backgroundImage:
                         "linear-gradient(90deg, rgba(255, 120, 0, 0.40) 0%, rgba(255, 230, 1, 0.40) 100%)",

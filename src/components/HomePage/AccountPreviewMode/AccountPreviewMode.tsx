@@ -24,7 +24,7 @@ const AccountPreviewMode = () => {
                   <input
                     type="text"
                     placeholder="Example:97463"
-                    className="rounded-full bg-neutral-10 w-full py-4 border text-center border-secondary-30 text-neutral-30"
+                    className="rounded-full bg-neutral-10 w-full py-4 border text-center border-secondary-30 text-neutral-20 focus:outline-none focus:border-primary-10 transition duration-300"
                   />
                   <div
                     className="w-full p-[1px] text-white font-semibold text-xl rounded-full"
@@ -38,7 +38,7 @@ const AccountPreviewMode = () => {
                         className="absolute h-full w-full rounded-full"
                         style={{
                           background:
-                            "linear-gradient(90deg, rgba(254, 119, 1, 0.10) 0%, rgba(255, 230, 1, 0.10) 100%);",
+                            "linear-gradient(90deg, rgba(254, 119, 1, 0.10) 0%, rgba(255, 230, 1, 0.10) 100%)",
                         }}
                       ></div>
 
@@ -66,7 +66,7 @@ const AccountPreviewMode = () => {
                     className="text-transparent bg-clip-text text-center font-Jost text-[22px] font-bold "
                     style={{
                       backgroundImage:
-                        " linear-gradient(90deg, #FF7800 57.15%, #FFE601 108.01%);",
+                        " linear-gradient(90deg, #FF7800 57.15%, #FFE601 108.01%)",
                     }}
                   >
                     View a Random Account

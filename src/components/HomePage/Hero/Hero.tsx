@@ -62,7 +62,7 @@ const Hero = () => {
                       className="absolute h-full w-full rounded-full"
                       style={{
                         background:
-                          "linear-gradient(90deg, rgba(254, 119, 1, 0.10) 0%, rgba(255, 230, 1, 0.10) 100%);",
+                          "linear-gradient(90deg, rgba(254, 119, 1, 0.10) 0%, rgba(255, 230, 1, 0.10) 100%)",
                       }}
                     ></div>
 

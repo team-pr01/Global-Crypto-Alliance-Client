@@ -8,6 +8,8 @@ import Hero from "@/components/HomePage/Hero/Hero";
 import LifetimeIncome from "@/components/HomePage/LifetimeIncome/LifetimeIncome";
 import PlatformOffers from "@/components/HomePage/PlatformOffers/PlatformOffers";
 import MonthlyTopEarners from "@/components/HomePage/MonthlyTopEarners/MonthlyTopEarners";
+import AlltimeTopEarners from "@/components/HomePage/AlltimeTopEarners/AlltimeTopEarners";
+import NeedHelp from "@/components/HomePage/NeedHelp/NeedHelp";
 
 export default function Home() {
   return (
@@ -18,7 +20,9 @@ export default function Home() {
       <LifetimeIncome/>
       <PlatformOffers/>
       <MonthlyTopEarners/>
+      <AlltimeTopEarners/>
        <FutureRoadMap/>
+       <NeedHelp/>
 
     </div>
   );
