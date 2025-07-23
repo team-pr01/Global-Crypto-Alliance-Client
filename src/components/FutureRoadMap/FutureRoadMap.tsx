@@ -123,7 +123,7 @@ const FutureRoadMap = () => {
     },
   ];
   return (
-    <div className="relative">
+    <div className="relative mt-7 xl:mt-[100px]">
       <div className="absolute top-[1300px] xl:top-[500px] -left-10 xl:-left-40 size-[171px] xl:size-[542px] rounded-full bg-gradient-to-r from-[#FF7800] to-[#FFE601] p-7 xl:p-16 flex items-center justify-center">
         <div className="relative w-full h-full rounded-full bg-neutral-10"></div>
       </div>
