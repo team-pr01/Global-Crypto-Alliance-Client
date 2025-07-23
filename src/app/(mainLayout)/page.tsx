@@ -6,6 +6,7 @@ import AccountPreviewMode from "@/components/HomePage/AccountPreviewMode/Account
 
 import Hero from "@/components/HomePage/Hero/Hero";
 import LifetimeIncome from "@/components/HomePage/LifetimeIncome/LifetimeIncome";
+import PlatformOffers from "@/components/HomePage/PlatformOffers/PlatformOffers";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutUs/>
       <AccountPreviewMode/>
       <LifetimeIncome/>
+      <PlatformOffers/>
        <FutureRoadMap/>
 
     </div>
