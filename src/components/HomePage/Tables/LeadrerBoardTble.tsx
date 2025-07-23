@@ -42,7 +42,7 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
             </span>
 
             {/* User Details */}
-            <div className="flex items-center gap-3 flex-1 min-w-[150px] max-w-[200px]">
+            <div className="flex items-center gap-3 flex-1 min-w-[140px] max-w-[200px]">
               <Image
                 src={user.avatar}
                 alt={user.name}
@@ -71,7 +71,7 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
             </span>
 
             {/* Button */}
-            <div className="flex justify-end w-fit">
+            <div className="flex justify-end min-w-[85px]">
               <div
                 className="flex p-[2px] w-fit rounded-full"
                 style={{
