@@ -21,7 +21,7 @@ const LifetimeIncome = () => {
           <h1
             style={{
               backgroundImage:
-                "linear-gradient(90deg, #FF7800 51.71%, #FFE601 100%)",
+                "linear-gradient(90deg, #4B4A4A -6.99%, #FD8721 24.9%, #FD8721 78.25%, #4B4A4A 109.86%)",
             }}
             className="text-base xl:text-[28px] font-bold text-transparent bg-clip-text font-Jost text-center xl:text-start max-w-full xl:max-w-[685px] mx-auto xl:mx-0"
           >
