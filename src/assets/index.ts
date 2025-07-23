@@ -27,6 +27,7 @@ import gradientBottomLeft from "../assets/images/gradient-bottom-left.svg";
 import gradientTopRight from "../assets/images/gradient-top-right.svg";
 import linnerBg from "../assets/images/linner-bg.png";
 import aboutUsCoin from "../assets/images/about-us-coin.png";
+import tutorialcardBg from "../assets/images/tutorial-card-bg.png";
 
 export const IMAGES = {
   layoutBg,
@@ -43,6 +44,7 @@ export const IMAGES = {
   gradientTopRight,
   linnerBg,
   aboutUsCoin,
+  tutorialcardBg
 };
 
 export const ICONS = {
