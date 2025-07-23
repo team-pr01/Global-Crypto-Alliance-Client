@@ -9,7 +9,7 @@ const NeedHelp = () => {
       <div className="flex flex-col-reverse lg:flex-row gap-0 lg:gap-10 mt-6 xl:mt-[100px]">
         <div className="flex flex-col items-center w-full lg:w-[50%]">
           {/* Card 1 */}
-          <div className="bg-neutral-10 rounded-2xl relative py-[79px] px-[45px] h-fit ">
+          <div className="bg-neutral-10 rounded-2xl relative py-[79px] px-9 xl:px-[45px] h-fit ">
             <Image
               src={IMAGES.gradientBottomLeft}
               alt=""
@@ -89,7 +89,7 @@ const NeedHelp = () => {
 
               <PrimaryButton
                 label="Contact our support team"
-                className="w-full mt-8"
+                className="w-full mt-8 text-sm md:text-lg"
               />
             </div>
           </div>
