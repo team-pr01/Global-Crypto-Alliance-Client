@@ -8,6 +8,8 @@ import gMeet from "../assets/icons/g-meet.svg";
 import wallet from "../assets/icons/wallet.svg";
 import telegramIcon from "../assets/icons/telegram-icon.svg";
 import medel from "../assets/icons/medel.svg";
+import silverMedel from "../assets/icons/silver-medel.svg";
+import medel2 from "../assets/icons/medel-3.svg";
 import arrowRight from "../assets/icons/arrow-right.svg";
 
 // gradient bg
@@ -96,6 +98,8 @@ export const ICONS = {
   wallet,
   telegramIcon,
   medel,
+  silverMedel,
+  medel2,
   arrowRight,
 };
 export const GRADIENT_BG = {

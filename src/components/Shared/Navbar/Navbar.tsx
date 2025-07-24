@@ -21,8 +21,7 @@ const Navbar = () => {
   return (
     <div
       className={clsx(
-        "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-        scrolled && "backdrop-blur-[24px] bg-gradient-future-roadmap"
+        "w-full z-50 transition-all duration-300",
       )}
     >
       <Container>
@@ -30,6 +29,9 @@ const Navbar = () => {
           <Image
             src={IMAGES.logo}
             alt="Logo"
+            className="md:w-[100px] w-[69px] fixed top-5 left-4 "
+          />
+          <div
             className="md:w-[100px] w-[69px]"
           />
           <div

@@ -1,6 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import Image from "next/image";
-import { ICONS } from "@/assets";
 
 interface UserData {
   position: number;
@@ -8,6 +8,7 @@ interface UserData {
   id: string;
   avatar: string;
   profit: string;
+  medel? : any;
 }
 
 interface LeaderboardProps {
@@ -24,8 +25,8 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
       {/* Table Header */}
       <div className="flex justify-between text-xs md:text-sm text-neutral-40 mb-4 px-6">
         <span className="w-fit">Position</span>
-        <span className="w-fit mr-5">User</span>
-        <span className="w-fit text-center">Weekly Profit</span>
+        <span className="w-fit mr-[52px]">User</span>
+        <span className="w-fit text-center">Profit</span>
         <span className="w-fit text-right">Visit Profile</span>
       </div>
 
@@ -51,18 +52,24 @@ const LeaderboardTable: React.FC<LeaderboardProps> = ({
                 className="rounded-full size-5 md:size-9"
               />
               <div>
-                <p className="text-white text-xs sm:text-[12px] md:text-base font-normal flex items-center">
+               <div className="relative">
+                 <p className="text-white text-xs sm:text-[12px] md:text-base font-normal flex items-center">
                   {user.name}
                 </p>
+                 {
+                  user?.medel &&
+                  <Image
+                src={user?.medel}
+                alt="Medal"
+                className="w-[9px] md:w-[17px] h-4 md:h-[24px] absolute -right-3 top-1"
+              />
+                 }
+               </div>
                 <p className="text-neutral-40 text-xs sm:text-[12px] md:text-base">
                   ID: {user.id}
                 </p>
               </div>
-              <Image
-                src={ICONS.medel}
-                alt="Medal"
-                className="w-[9px] md:w-[17px] h-4 md:h-[24px]"
-              />
+             
             </div>
 
             {/* Profit */}

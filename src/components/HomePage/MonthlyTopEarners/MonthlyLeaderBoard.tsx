@@ -1,24 +1,23 @@
 "use client"
-import { IMAGES } from "@/assets";
+import { ICONS, IMAGES } from "@/assets";
 import LeaderboardTable from "../Tables/LeadrerBoardTble";
 
 const leaderboardData = [
-  { position: 1, name: "Marco Jens", id: "481029", avatar: IMAGES.user, profit: "$942" },
-  { position: 2, name: "Jane Doe", id: "481045", avatar: IMAGES.user, profit: "$890" },
-  { position: 3, name: "Marco Jens", id: "481029", avatar: IMAGES.user, profit: "$942" },
-  { position: 4, name: "Jane Doe", id: "481045", avatar: IMAGES.user, profit: "$890" },
-  { position: 5, name: "Marco Jens", id: "481029", avatar: IMAGES.user, profit: "$942" },
+  { position: 1, name: "Marco Jems", id: "481029", avatar: IMAGES.user, profit: "$942", medel : ICONS.medel },
+  { position: 2, name: "Marco Jems", id: "481045", avatar: IMAGES.user, profit: "$657",  medel : ICONS.silverMedel },
+  { position: 3, name: "Marco Jems", id: "481029", avatar: IMAGES.user, profit: "$542",  medel : ICONS.medel2 },
+  { position: 4, name: "Marco Jems", id: "481045", avatar: IMAGES.user, profit: "$763" },
+  { position: 5, name: "Marco Jems", id: "481029", avatar: IMAGES.user, profit: "$843" },
 ];
 
 export default function MonthlyLeaderBoard() {
-  const mobileData = leaderboardData.slice(0, 4); // Only first 4 rows
 
   return (
     <>
       {/* Mobile (< md) */}
       <div className="block md:hidden">
         <LeaderboardTable
-          data={mobileData}
+          data={leaderboardData}
           onJoinClick={(user) => console.log("Join clicked", user)}
         />
       </div>
