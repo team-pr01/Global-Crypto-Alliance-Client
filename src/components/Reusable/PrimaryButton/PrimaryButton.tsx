@@ -17,18 +17,19 @@ const PrimaryButton: React.FC<GradientButtonProps> = ({
   return (
     <div
       className={twMerge(
-    `
-    cursor-pointer
-    relative w-[300px] px-[39px] py-[14px] xl:py-[17px]
-    text-lg text-neutral-10 font-Jost rounded-full font-semibold
-    flex flex-col justify-center items-center gap-1
-    bg-[linear-gradient(90deg,_#FF7800_0%,_#FFE601_100%)]
-    group transition-all duration-300
-    hover:bg-[linear-gradient(90deg,_#E66F00_0%,_#D4C101_100%)]
-    active:bg-[linear-gradient(90deg,_#CC6600_0%,_#C2B400_100%)]
-    `,
-    className
-  )}
+  `
+  cursor-pointer
+  relative w-[300px] px-[39px] py-[14px] xl:py-[17px]
+  text-lg text-neutral-10 font-Jost rounded-full font-semibold
+  flex flex-col justify-center items-center gap-1
+  bg-[linear-gradient(90deg,_#FF7800_0%,_#FFE601_100%)]
+  transition-all duration-300
+  hover:bg-[linear-gradient(90deg,_#FFE601_0%,_#FF7800_100%)]
+  active:bg-[linear-gradient(90deg,_#FFE601_0%,_#FF7800_100%)]
+  `,
+  className
+)}
+
     >
       <Image
         src={IMAGES.buttonDesign}
