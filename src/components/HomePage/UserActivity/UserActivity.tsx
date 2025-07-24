@@ -84,7 +84,7 @@ const UserActivity = () => {
           <div className="w-full max-w-[1000px] mx-auto mt-10">
             {/* Table Header */}
             <div className="flex justify-between text-xs md:text-lg text-neutral-40 mb-7 font-medium">
-              <span className="w-fit">User ID</span>
+              <span className="w-fit mr-7">User ID</span>
               <span className="w-fit mr-5">Profit</span>
               <span className="w-fit text-center">Time</span>
               <span className="w-fit text-center">Program</span>
@@ -99,9 +99,9 @@ const UserActivity = () => {
                   className="flex justify-between items-center gap-4 text-white text-[10px] xl:text-lg font-semibold text-center"
                 >
                   {/* Position */}
-                  <div className={`w-[60px] xl:w-fit p-2  rounded-md relative ${user?.isUserIdDisabled ? "bg-neutral-55 text-neutral-10" : "bg-primary-10 text-white"}`}>
+                  <div className={`w-[60px] xl:w-fit px-2 py-[6px] rounded-md relative ${user?.isUserIdDisabled ? "bg-neutral-55 text-neutral-10" : "bg-primary-10 text-white"}`}>
                     {user?.isNew && (
-                      <div className="bg-[#2AB500] rounded-[25px] px-1 py-[2px] text-white text-[10px] text-center absolute -top-3 left-0 right-0 w-fit mx-auto">
+                      <div className="bg-[#2AB500] rounded-[25px] px-2 py-[1px] text-white text-[10px] text-center absolute -top-[10px] left-0 right-0 w-fit mx-auto">
                         New
                       </div>
                     )}
@@ -112,7 +112,7 @@ const UserActivity = () => {
                   <span className="w-fit">{user.profit}</span>
 
                   {/* Time */}
-                  <span className="w-fit">{user.time}</span>
+                  <span className="w-fit text-nowrap">{user.time}</span>
 
                   {/* Program */}
                   <span className="w-fit">{user.program}</span>

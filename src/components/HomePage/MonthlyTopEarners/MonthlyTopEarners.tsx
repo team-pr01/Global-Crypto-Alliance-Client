@@ -6,7 +6,7 @@ import PrimaryButton from "@/components/Reusable/PrimaryButton/PrimaryButton";
 
 const MonthlyTopEarners = () => {
   return (
-    <div className="mt-6 xl:mt-12">
+    <div className="mt-6 xl:mt-12 z-10 relative">
       <Container>
         <div className="flex justify-center mt-4 mb-8">
           <ReusableHeading highlight="Monthly Top Earners" />

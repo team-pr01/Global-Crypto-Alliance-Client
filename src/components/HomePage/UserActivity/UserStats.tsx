@@ -19,7 +19,11 @@ const UserStats = () => {
     },
     {
       title: "Members Received",
-      description: <>876,32,658</>,
+      description: (
+        <>
+          876 326 258.64 <span className="text-primary-10">USDT</span>
+        </>
+      ),
       image: IMAGES.membersTransfered,
     },
   ];

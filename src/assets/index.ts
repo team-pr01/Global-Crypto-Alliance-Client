@@ -49,6 +49,7 @@ import membersReceived from "../assets/images/members-received.svg";
 import members from "../assets/images/members.svg";
 import heroGradient2 from "../assets/images/hero-gradient-2.svg";
 import linnerBgRight from "../assets/images/linner-bg-right.svg";
+import linnerBgRight2 from "../assets/images/linner-bg-right-2.svg";
 import linnerBgLeft from "../assets/images/linner-bg-left.svg";
 import lineBg from "../assets/images/line-bg.svg";
 
@@ -85,6 +86,7 @@ export const IMAGES = {
   members,
   heroGradient2,
   linnerBgRight,
+  linnerBgRight2,
   linnerBgLeft,
   lineBg,
 };

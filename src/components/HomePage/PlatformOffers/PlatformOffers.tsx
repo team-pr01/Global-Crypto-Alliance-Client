@@ -32,16 +32,16 @@ const PlatformOffers = () => {
 
   return (
     <Container>
-      <div className="flex flex-col items-center justify-center mt-6 xl:mt-[100px]">
-        <h2 className="text-xl md:text-[40px] text-center font-bold max-w-[530px] mx-auto">
+      <div className="flex flex-col items-center justify-center mt-6 xl:mt-[100px] z-10 relative">
+        <h2 className="text-xl md:text-[40px] text-center font-bold max-w-[530px] mx-auto font-Inter">
           <span
             className="text-transparent bg-clip-text"
             style={{
               backgroundImage:
-                "linear-gradient(90deg, #FF7800 51.71%, #FFE601 100%)",
+                "linear-gradient(90deg, #FF7800 43.75%, #FFE601 100%)",
             }}
           >
-            Our Platform Offers 6 Types Of Income Strems
+            Our Platform Offers <span className="text-white">6</span> Types Of Income Strems
           </span>
         </h2>
 

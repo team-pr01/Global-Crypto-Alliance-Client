@@ -7,18 +7,10 @@ import { IMAGES } from "@/assets";
 
 const AlltimeTopEarners = () => {
   return (
-    <div className="mt-6 xl:mt-12 bg-neutral-10 relative p-3 xl:p-6">
-      <Image
-        src={IMAGES.linnerBg2}
-        alt=""
-        className="absolute top-3 xl:top-6 right-3 xl:right-6"
-      />
-      <Image
-        src={IMAGES.linnerBg2}
-        alt=""
-        className="absolute bottom-3 xl:bottom-6 left-3 xl:left-6 rotate-180"
-      />
-      <div className="absolute top-0 left-0 rounded-l-2xl">
+    <div className="mt-6 xl:mt-12 relative ">
+      <Container>
+        <div className="bg-neutral-10 p-3 xl:p-6 rounded-2xl relative">
+             <div className="absolute top-0 left-0 rounded-l-2xl z-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="224"
@@ -68,14 +60,24 @@ const AlltimeTopEarners = () => {
           </defs>
         </svg>
       </div>
-      <Container>
+           <Image
+        src={IMAGES.linnerBgRight2}
+        alt=""
+        className="absolute top-1 xl:top-6 right-1 xl:right-6 z-0"
+      />
+      <Image
+        src={IMAGES.linnerBgRight2}
+        alt=""
+        className="absolute bottom-1 xl:bottom-6 left-1 xl:left-6 rotate-180 z-0"
+      />
         <div className="flex justify-center mt-4 mb-8">
           <ReusableHeading highlight="All Time Top Earners" />
         </div>
 
-        <div className="pb-4 xl:pb-0">
+        <div className="pb-1 xl:pb-0">
           <AllTimeLeaderBoard />
           <PrimaryButton label="View More" className="mt-2 w-full" />
+        </div>
         </div>
       </Container>
     </div>
