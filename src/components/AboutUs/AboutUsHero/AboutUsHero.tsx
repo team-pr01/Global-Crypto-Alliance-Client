@@ -17,7 +17,7 @@ const AboutUsHero = () => {
   return (
     <div>
       <Container>
-        <div className="flex text-Jost flex-col md:flex-row items-center gap-7 mb-8">
+        <div className="flex text-Jost flex-col md:flex-row items-center gap-7 mb-8 z-10">
           {/* Image Section */}
           <div className="w-full md:w-[40%]">
             <Image

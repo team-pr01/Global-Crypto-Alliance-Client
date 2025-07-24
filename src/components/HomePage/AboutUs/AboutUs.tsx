@@ -1,8 +1,10 @@
+"use client"
 import { IMAGES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
 import ReusableHeading from "@/components/Reusable/Heading/Heading";
 import PrimaryButton from "@/components/Reusable/PrimaryButton/PrimaryButton";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const AboutUs = () => {
@@ -21,10 +23,12 @@ const AboutUs = () => {
               and globally accessible ecosystem that places users in full
               control of their digital assets.
             </p>
-            <PrimaryButton
-              label="View More"
-              className="xl:w-[320px] mt-[21px]"
-            />
+            <Link href={"/about-us"}>
+              <PrimaryButton
+                label="View More"
+                className="xl:w-[320px] mt-[21px]"
+              />
+            </Link>
           </div>
 
           <div className="w-full md:w-[40%]">
