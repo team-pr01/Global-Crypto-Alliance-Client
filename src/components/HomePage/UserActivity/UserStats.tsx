@@ -24,7 +24,7 @@ const UserStats = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-7 xl:gap-[30px] mt-12 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-[22px] xl:gap-[30px] mt-12 w-full">
       {platformOffers.map((item, index) => (
         <div
           key={index}
